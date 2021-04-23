@@ -9,7 +9,7 @@
   seguras e robustas através do ecosistema do .NET. A linguagem é essencialmente utilizada na plataforma .NET e
   usa sua máquina virtual(CLR) como meio para ser executada, além de ter disponível uma série de classes prontas
   para antender aos requisitos definidos na criação de uma aplicação.<br>
-     O C# foi desenvolvido para suprir a necessidade que a Microsoft tinha de uma linguagem que atendesse a requisição
+  O C# foi desenvolvido para suprir a necessidade que a Microsoft tinha de uma linguagem que atendesse a requisição
   de ser multiplataforma, assim como o Java, linguagem que esteve presente nos ambentes Windows por um bom tempo.
   Por um conflito judicial a empresa passou a não poder utilizar o Java em seus projetos, o que levou em fim a
   criação do .NET e da liguagem C#.
@@ -80,12 +80,11 @@
 <h3>Class</h3>
   
 <h5>
-     A classe é aonde se define o comportamento da própria classe. Sendo declarada através da palavra chave "class", pode
-  ser precedida de um identificador de nível de acessibilidade, podendo ser instanciada por qualquer um caso seja do
-  tipo public, identificador padrão.<br>
-  Além disso, as classes também possuem um Namespace único que as identifica, sendo este chamado em caso de uso dessa
-  classe em outra parte da aplicação. A partir desse ponto, tudo o que for contido por uma classe é chamado de
-  membro de classe, e faz parte do que será executado junto com o programa.
+     A classe é aonde se define o comportamento da própria classe. Sendo declarada através da palavra chave "class",
+  pode ser precedida de um identificador de nível de acessibilidade, podendo ser instanciada por qualquer um caso seja
+  do tipo public, identificador padrão. Além disso, as classes também possuem um Namespace único que as identifica, sendo
+  este chamado em caso de uso dessa classe em outra parte da aplicação. A partir desse ponto, tudo o que for contido por
+  uma classe é chamado de membro de classe, e faz parte do que será executado junto com o programa.
 </h5>
 
 <h3>MainFunction</h3>
