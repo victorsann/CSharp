@@ -2,6 +2,8 @@
 <div align="center">
   <img src="https://user-images.githubusercontent.com/61476935/115932830-19b66200-a464-11eb-8578-5a9249c16268.png">
 </div>  
+<br>
+<img src="https://img.shields.io/static/v1?label=CSHARP&message=Language&color=purple&style=for-the-badge&logo="/>
 
 <h5>
      Desenvolvida e mantida pela Micrsoft, o C# é uma linguagem de programação moderna, orientada a objetos
