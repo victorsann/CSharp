@@ -7,7 +7,7 @@
   Introdução
 </h3>
 
-<h5  align="center"
+<h5  align="center">
   Desenvolvida e mantida pela Micrsoft, o C# é uma linguagem de programação moderna, orientada a objetos
   e de tipagem forte. Por meio de suas feramentas o C# permite o desenvolvimento de diversos tipos de aplicações
   seguras e robustas através do ecosistema do .NET. A linguagem é essencialmente utilizada na plataforma .NET e
