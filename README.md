@@ -66,7 +66,7 @@
 <h5>
   O Namespace tem a função de identificar determinada classe como única na solução, evitando conflitos sintáticos.
   Além disso, agrupa as funcionalidades comuns a essa classe e permite que ela seja utilizada em outra parte da
-  aplicação quando chamada.Exemplo:
+  aplicação quando chamada. Exemplo:
 <h5>
 
 ><h4>System.Console.WriteLine("Hello World!")<h4>
