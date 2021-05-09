@@ -20,7 +20,7 @@ criação do .NET e da liguagem C#.
 <h2>Hellow World</h2>
 
 
-Um dos primeiros passos aos iniciar em uma nova tecnologia é o clássico Hello World,
+Um dos primeiros passos ao iniciar em uma nova tecnologia é o clássico Hello World,
 bastante eficaz para enter a estrutura básica de uma linguagem, sendo assim, abaixo 
 está um exemplo de Hellow World em C#:
 
@@ -35,7 +35,14 @@ está um exemplo de Hellow World em C#:
           }
       }
 
-
+O "Hello World" começa com a diretiva <strong>using</strong> que referencia o namespace 
+<strong>System</strong>. O namespace nada mais é que uma definição de acesso hierárquico
+aos recursos dos programas e bibliotecas C#, sendo o Console um dos vários recursos do 
+sistema. A classe criada e chamada de Hello possui apenas o método Main() como seu recurso.
+Sendo definido como static, fazendo com que o método não precise ser referenciado, ele 
+assume a caracterítica de entry da classe Hello. Com a definição de acesso aos recursos do
+System é possível usar a classe Console, que por sua vez possui o método WriteLine(). Esse
+método é o responsável por fazer o binding da string "Hello, World" no Console.
 
 
 <div align="center">
@@ -43,5 +50,5 @@ está um exemplo de Hellow World em C#:
 </div> 
 
 
-<h1>Tipos de Dados</h1>
+<h1>Tipos e Variáveis</h1>
 
