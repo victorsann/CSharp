@@ -95,3 +95,11 @@ uma classe é chamado de membro de classe, e faz parte do que será executado ju
 A MainFunction, função principal, método ou rotina principal, é uma função de execução padrão, ou seja, tudo o que for
 definido como seu conteúdo, será executado ao iniciar o programa.
 
+
+<div align="center">
+  <h1>Fundqmentos da Linguagem</h1>
+</div> 
+
+
+<h1>Tipos de Dados</h1>
+
