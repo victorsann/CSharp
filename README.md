@@ -25,79 +25,21 @@ bastante eficaz para enter a estrutura básica de uma linguagem, sendo assim, ab
 está um exemplo de Hellow World em C#:
 
 
-       using System;
-       using System.Collections.Generic;
-       using System.Linq;
-       using System.Text;
-       using System.Threading.Tasks;
+      using System;
 
-       namespace HelloWorld
-       {
-           class Program
-           {
-               static void Main(string[] args)
-               {
-                  Console.WriteLine("Hello World");
-                  Console.ReadLine();
-               }
-           }
-       }
- 
-
-<h3>Modules</h3>
-     
-
-Os módulos ou pacotes padrões são subdivisões da linguagem, arquitetura definida graças ao tamanho do C# em
-termos de conteúdo. Cada funcionalidade da linguagem que será utilizada dentro do projeto deve ter seu módulo
-definido na parte inicial do programa, não sendo necessário escreve-los manualmente, já que o .NET possui toda
-uma estrutura de pré definição das características do projeto em sua criação, mas sendo possível caso necessário.
+      class Hello
+      {
+          static void Main()
+          {
+              Console.WriteLine("Hello, World");
+          }
+      }
 
 
-<h3>
-  Sintaxe de Uso de Um Módulo using System
-</h3>
- 
- 
-A diretiva 'using' define a intenção que o programa tem de, em determinado momento, fazer uso do módulo que será
-declarado em seguida, sendo nesse caso o System. O módulo System define que o projeto pretende fazer uso das
-funcionalidades do sistema operacional do usuário, entre outra coisas.
-
-
-<h3>Namespace</h3>
-
-
-O Namespace tem a função de identificar determinada classe como única na solução, evitando conflitos sintáticos.
-Além disso, agrupa as funcionalidades comuns a essa classe e permite que ela seja utilizada em outra parte da
-aplicação quando chamada. Exemplo:
-
-
->System.Console.WriteLine("Hello World!")
-
-
-System é um namespace e Console é uma classe nesse Namespace. Caso seja preciso chamar essa classe, a palavra-chave
-using pode ser usada para que o nome completo não seja necessário, exatamente como na definição de uso
-de um módulo.
-
-   
-<h3>Class</h3>
-  
-
-A classe é aonde se define o comportamento da própria classe. Sendo declarada através da palavra chave "class",
-pode ser precedida de um identificador de nível de acessibilidade, podendo ser instanciada por qualquer um caso seja
-do tipo public, identificador padrão. Além disso, as classes também possuem um Namespace único que as identifica, sendo
-este chamado em caso de uso dessa classe em outra parte da aplicação. A partir desse ponto, tudo o que for contido por
-uma classe é chamado de membro de classe, e faz parte do que será executado junto com o programa.
-
-
-<h3>MainFunction</h3>
-
-
-A MainFunction, função principal, método ou rotina principal, é uma função de execução padrão, ou seja, tudo o que for
-definido como seu conteúdo, será executado ao iniciar o programa.
 
 
 <div align="center">
-  <h1>Fundqmentos da Linguagem</h1>
+  <h1>Fundamentos da Linguagem</h1>
 </div> 
 
 
