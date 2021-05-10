@@ -6,19 +6,17 @@
 <img src="https://img.shields.io/static/v1?label=CSHARP&message=Language&color=purple&style=for-the-badge&logo="/>
 
 
-Desenvolvida e mantida pela Micrsoft, o C# é uma linguagem de programação moderna, orientada a objetos e de tipagem forte. Por meio de suas feramentas
-o C# permite o esenvolvimento de diversos tipos de aplicações seguras e robustas através do ecosistema do .NET. A linguagem é essencialmente utilizada
-na plataforma .NET e usa sua máquina virtual(CLR) como meio para ser executada, além de ter disponível uma série de classes prontas para antender aos
-requisitos definidos na criação de uma aplicação.<br> O C# foi desenvolvido para suprir a necessidade que a Microsoft tinha de uma linguagem que atendesse
-a requisição de ser multiplataforma, assim como o Java, linguagem que esteve presente nos ambentes Windows por um bom tempo. Por um conflito judicial a
-empresa passou a não poder utilizar o Java em seus projetos, o que levou em fim acriação do .NET e da liguagem C#.
+Desenvolvida e mantida pela Micrsoft, o C# é uma linguagem de programação moderna, orientada a objetos e fortemente tipada. Criada com o intuito de 
+suprir a necessidade que a Microsoft tinha de uma linguagem que atendesse a requisição de ser multiplataforma, substituindo a anteriormente utilizada
+Java, sendo ambas muitas parecidas. O C# é utilizado em conjunto com a máquina virtual disponibilizada pelo .NET, cgamada de Common Language Runtime
+(CLR), sendo convertida em machine code em um processo chamado de JIT. 
 
 
 <h2>Hellow World</h2>
 
 
-Um dos primeiros passos ao iniciar em uma nova tecnologia é o clássico Hello World, bastante eficaz para enter a estrutura básica de uma linguagem,
-sendo assim, abaixo está um exemplo de Hellow World em C#:
+Um dos primeiros passos ao iniciar em uma nova tecnologia é o clássico Hello World, bastante eficaz para enter a estrutura básica de uma linguagem.
+Sendo assim, abaixo está um exemplo de Hellow World em C#:
 
 
       using System;
@@ -38,18 +36,23 @@ ele assume a caracterítica de entry da classe Hello. Com a definição de acess
 vez possui o método WriteLine(). Esse método é o responsável por fazer o binding da string "Hello, World" no Console.
 
 
-<h1>Tipos e Variáveis</h1>
+<div align="center">
+  <h1>Tipos e Variáveis</h1>
+</div>
+
 
 Os tipos se manifestam de duas formas no C#: value types e reference types;
 
-<br>
 
 <h1>Value Types</h1>
 
-Variáveis de value types cotém diretamente seus valores. Os tipos valores internos do Value Types são divididos em simple types, enum types, structure
+
+Variáveis de value types cotém diretamente seus valores. Os tipos internos do Value Types são divididos em simple types, enum types, structure
 types, nullable value types, e tuple value types. 
 
+
 <h2>Tipos numéricos integrais (Simple Types)</h2>
+
 
 Os tipos numéricos integrais representam números inteiros. Todos os tipos numéricos integrais são tipos de valor. Eles também são tipos
 simples e podem ser inicializados com literais. Todos os tipos numéricos integrais suportam operadores aritméticos, lógicos bit a bit,
@@ -73,11 +76,13 @@ O C# suporta os seguintes tipos integrais predefinidos:
 
 <h2>Tipos numéricos de ponto flutuante (Simple Types)</h2>
 
+
 Os tipos numéricos de ponto flutuante representam números reais. Todos os tipos numéricos de ponto flutuante são tipos de valor. Eles também
 são tipos simples e podem ser inicializados com literais. Todos os tipos numéricos de ponto flutuante oferecem suporte a operadores aritméticos,
 de comparação e de igualdade.
 
 O C# oferece suporte aos seguintes tipos de ponto flutuante predefinidos:
+
 
 |  C# Tipo/Palavra-chave  |         Alcance Aproxiamdo         |   Precisão   |   Tamanho   |     .NET type      |
 | ----------------------- | ---------------------------------- | ------------- | ----------- | ------------------ | 
@@ -88,17 +93,15 @@ O C# oferece suporte aos seguintes tipos de ponto flutuante predefinidos:
 
 <h2>bool (Simple Types)</h2>
 
-A palavra-chave bool type é um alias para o tipo de estrutura .NET System.Boolean que representa um valor booleano, que pode ser true ou false.
 
-<br>
+A palavra-chave bool type é um alias para o tipo de estrutura .NET System.Boolean que representa um valor booleano, que pode ser true ou false.
 
 Para realizar operações lógicas com valores do tipo booleano, usa-se operadores lógicos booleanos. O tipo bool é o tipo de resultado dos operadores
 de comparação e igualdade. Uma expressão booleana pode ser uma expressão condicional de controle nas instruções if, do, while e for e no operador
 condicional ?:.
 
-<br>
-
 O valor padrão do tipo bool é falso.
+
 
     bool check = true;
     Console.WriteLine(check ? "Checked" : "Not checked");  // output: Checked
@@ -108,6 +111,7 @@ O valor padrão do tipo bool é falso.
 
 <h2>char (Simple Types)</h2>
 
+
 A palavra-chave char type é um alias para o tipo de estrutura .NET System.Char que representa um caractere Unicode UTF-16.
 
 
@@ -116,22 +120,20 @@ A palavra-chave char type é um alias para o tipo de estrutura .NET System.Char 
   |  char  | U+0000 to U+FFFF	|   16 bit    | System.Char |
 
 
-O valor padrão de um char é \0, que equivale a U+0000.
-
-<br>
-
 O tipo char oferece suporte a operadores de comparação, igualdade, incremento e decremento. Além disso, para operandos char, os operadores
 lógicos aritméticos e bit a bit executam uma operação nos códigos de caracteres correspondentes e produzem o resultado do tipo int.
 
-<br>
-
 O tipo string representa texto através de uma sequência de valores char.
+
+O valor padrão de um char é \0, que equivale a U+0000.
 
 
 <h2>Enumeration types</h2>
 
-Um tipo de enumeração (ou tipo enum) é um tipo de valor definido por um conjunto de constantes nomeadas do tipo numérico integral subjacente.
-Para definir um tipo de enumeração, use a palavra-chave enum e especifique os nomes dos membros de enum:
+
+Um tipo de enumeração (ou tipo enum) é um tipo de valor definido por um conjunto de constantes nomeadas do tipo numérico. Para definir um tipo
+de enumeração, usa-se a palavra-chave enum e especifica-se os nomes dos membros de enum:
+
 
     enum Season
     {
@@ -141,9 +143,11 @@ Para definir um tipo de enumeração, use a palavra-chave enum e especifique os 
         Winter
     }
 
-Por padrão, os valores constantes associados de membros enum são do tipo int; eles começam com zero e aumentam em um seguindo a ordem do texto
-de definição. Você pode especificar explicitamente qualquer outro tipo numérico integral como um tipo subjacente de um tipo de enumeração.
-Você também pode especificar explicitamente os valores constantes associados, como mostra o exemplo a seguir:
+
+Por padrão, os valores constantes associados de membros enum são do tipo int; eles começam com zero e aumentam em 1 seguindo a ordem do texto
+de definição. É possível especificar explicitamente qualquer outro tipo numérico integral como um tipo subjacente de um tipo de enumeração.
+Também é possível especificar explicitamente os valores constantes associados, como mostra o exemplo a seguir:
+
 
     enum ErrorCode : ushort
     {
@@ -156,8 +160,10 @@ Você também pode especificar explicitamente os valores constantes associados, 
 
 <h2>Structure types</h2>
 
-Um Structure type (ou tipo de estrutura) é um tipo de valor que pode encapsular dados e funcionalidades relacionadas. Você usa a palavra-chave
+
+Um Structure type (ou tipo de estrutura) é um tipo de valor que pode encapsular dados e funcionalidades relacionadas. Nele usa-se a palavra-chave
 struct para definir um tipo de estrutura:
+
 
     public struct Coords
     {
@@ -173,33 +179,34 @@ struct para definir um tipo de estrutura:
         public override string ToString() => $"({X}, {Y})";
     }
 
+
 Os tipos de estrutura têm semântica de valor. Ou seja, uma variável de um tipo de estrutura contém uma instância do tipo. Por padrão, os valores
 das variáveis são copiados na atribuição, passando um argumento para um método ou retornando um resultado do método. No caso de uma variável do
-tipo de estrutura, uma instância do tipo é copiada. Para obter mais informações, consulte Tipos de valor.
+tipo de estrutura, uma instância do tipo é copiada. 
 
 
 <h2>Nullable value types</h2>
+
 
 Um tipo de valor nullable T? representa todos os valores de seu tipo de valor subjacente T e um valor nulo adicional. Por exemplo, é possível
 atribuir qualquer um dos três valores a seguir a um bool? variável: verdadeiro, falso ou nulo. Um tipo de valor subjacente T não pode ser um
 tipo de valor nullable em si.
 
-<br>
-
 Qualquer tipo de valor nullable é uma instância da estrutura genérica System.Nullable<T>. É possível se referir a um tipo de valor nullable com um
 tipo subjacente T em qualquer uma das seguintes formas intercambiáveis: <strong>nullable<T></strong> ou <strong>T ?.</strong>
-
-<br>
 
 Normalmente, usa-se um tipo de valor nullable quando é preciso representar o valor indefinido de um tipo de valor subjacente. Por exemplo, uma
 variável booleana só pode ser verdadeira ou falsa. No entanto, em algumas aplicações, um valor de variável pode ser indefinido ou ausente. Por
 exemplo, um campo de banco de dados pode conter verdadeiro ou falso ou pode não conter nenhum valor, ou seja, NULL. Nesse cenário é possível
 usar o <strong>bool?</strong> como definição. 
 
-<h2>Declaração e atribuição</h2>
 
-Como um tipo de valor é implicitamente conversível no tipo de valor nullable correspondente, é possível atribuir um valor a uma variável de um
-tipo de valor nullable como faria para seu tipo de valor subjacente. Sendo possível atribuir o valor nulo. Por exemplo:
+<h2>Declaração e Atribuição</h2>
+
+
+Como um valor é implicitamente conversível para nullable, é possível atribuir um valor a uma variável de um tipo de valor nullable como se a mesma
+fosse seu tipo de valor subjacente. Sendo possível atribuir o valor nulo a mesma. Por exemplo:
+
 
     double? pi = 3.14;
     char? letter = 'a';
@@ -212,15 +219,17 @@ tipo de valor nullable como faria para seu tipo de valor subjacente. Sendo poss�
     // An array of a nullable value type:
 
     int?[] arr = new int?[10];
+    
 
-O valor padrão de um tipo de valor nullable representa nulo, ou seja, é uma instância cuja propriedade <strong>Nullable<T></strong>.HasValue
-retorna falso.
+O valor padrão de um nullable representa nulo, ou seja, é uma instância cuja propriedade <strong>Nullable<T></strong>.HasValue retorna falso.
 
 
 <h2>Tuple types</h2>
 
+
 Disponível no C# 7.0 e versões posteriores, o recurso de tuplas fornece sintaxe concisa para agrupar vários elementos de dados em uma estrutura de
-dados leve. O exemplo a seguir mostra como é possível declarar uma variável de tupla, inicializá-la e acessar seus membros de dados:
+dados leve. O exemplo a seguir mostra como é possível declarar uma variável de tupla, inicializá-la e acessar seus dados:
+
 
     (double, int) t1 = (4.5, 3);
     Console.WriteLine($"Tuple with elements {t1.Item1} and {t1.Item2}.");
@@ -239,19 +248,21 @@ dados leve. O exemplo a seguir mostra como é possível declarar uma variável d
 
 <h1>Reference types</h1>
 
+
 Os tipos de dados internos do reference type são divididos em: 
 
 |  C# type keyword	|   .NET type   |
 | ----------------- | ------------- |
-| object	        | System.Object |
-| string	        | System.String |
-| dynamic	        | System.Object |
+| object	          | System.Object |
+| string	          | System.String |
+| dynamic	          | System.Object |
 
 
 <h2>Object</h2>
 
+
 O tipo de objeto é um alias para System.Object em .NET. No sistema de tipo unificado do C#, todos os tipos, predefinidos e definidos pelo usuário,
-tipos de referência e tipos de valor, herdam direta ou indiretamente de System.Object. É possível atribuir valores de qualquer tipo a variáveis ​​do
+tipos de referência e tipos de valor, herdam direta ou indiretamente de System.Object. É possível atribuir valores de qualquer tipo a variáveis do
 tipo de objeto. Qualquer variável de objeto pode ser atribuída a seu valor padrão usando o nulo literal. Quando uma variável de um tipo de valor é
 convertida em objeto, é dito que esta está em uma caixa. Quando uma variável do tipo objeto é convertida em um tipo de valor, é dito que ela foi
 removida da caixa. 
@@ -259,81 +270,92 @@ removida da caixa.
 
 <h2>String</h2>
 
+
 O tipo de string representa uma sequência de zero ou mais caracteres(char) Unicode. string é um apelido para System.String em .NET.
+
 
     string a = "hello";
     string b = "h";
+    
 
 <h2>Dynamic</h2>
 
-O tipo dinâmico indica que o uso da variável e as referências a seus membros ignoram a verificação de tipo em tempo de compilação. Em vez disso, essas
-operações são resolvidas em tempo de execução. 
 
+O tipo dinâmico indica que o uso da variável e as referências a seus membros ignoram a verificação de tipo em tempo de compilação. Em vez disso, 
+essas operações são resolvidas em tempo de execução. 
 
-<h1>Vriáveis e Constantes</h1>
+<div align="center">
+   <h1>Variáveis e Constantes</h1>
+</div>
 
+Uma variável é uma unidade de armazenamento de dados. No C# há formas distintas de declar uma variável, elas são: 
 
-Uma variável é unidade mínima de armazenamento de dados. Há formas distintas de declar uma variável em C#, elas são: 
 
 <h2>Implicitamente Tipada</h2>
 
-> //Sintaxe:
 
-> var <identificador> = <valor/expressão>;
-
-> //Exemplos
-
-> var quantidade = 18;
-> var preco = 14.73;
-> var valorTotal = quantidade * preco;
-
+    //Sintaxe:
+    
+     var <identificador> = <valor/expressão>;
+     
+     //Exemplos
+     
+     var quantidade = 18;
+     var preco = 14.73;
+     var valorTotal = quantidade * preco;
+     
+     
 Durante a compilação o tipo da variável é determinado pelo valor atribuído ou pelo resultado da expressão.
 Posteriormente não poderá ser atribuído um valor de tipo diferente à variável.
 
+
 <h2>Explicitamente Tipada</h2>
 
-> //Sintaxe:
 
-> <tipo> <identificador> = <valor/expressão>;
+    //Sintaxe:
 
-> //Exemplos
+    <tipo> <identificador> = <valor/expressão>;
 
-> int idade = 18;
-> double precoCusto = 8.50;
-> double precoVenda = 12.30d;
-> double valorLucro = precoVenda - precoCusto;
-> float percentual = 12.5f;
+    //Exemplos
 
+    int idade = 18;
+    double precoCusto = 8.50;
+    double precoVenda = 12.30d;
+    double valorLucro = precoVenda - precoCusto;
+    float percentual = 12.5f;
+
+
+Um valor ou uma expressão pode ser atribuído durante a declaração da variável.
 
 Obs.: Variáveis explicitamente tipada que carreguem valores decimais recebem um prefixo de definição:
 
-• Tipo double: d ou D
-• Tipo float: f ou F
-• Tipo decimal: m ou M
+<ul>
+ <li>Tipo double: d ou D</li>
+ <li>Tipo float: f ou F</li>
+ <li>Tipo decimal: m ou M</li>
+</ul>
 
+Uma constante possui a mesma definição de armazenamento de uma variável, tendo a diferença clara de imutabilidade do dado armazenado,
+além de que um valor deverá ser necessariamente atribuído na declaração.:
 
-Uma constante possui a mesma definição de armazenamento de uma variável, tendo a diferença clara de imutabilidade do dado armazenado:
+    //Sintaxe:
 
-> //Sintaxe:
+    const <tipo> <identificador> = <valor>;
 
-> const <tipo> <identificador> = <valor>;
+    //Exemplos
 
-> //Exemplos
-
-> const double PI = 3.14;
-> const int mediaPadrao = 7;
+    const double PI = 3.14;
+    const int mediaPadrao = 7;
 
 
 <h2>Arrays</h2>
 
 
-Array, vetor ou matriz definem o armazenamento de multiplos dados em um único elemento. A delcaração de uma matriz é feita definindo oo tipo de seus elementos.
-Para definir que um array suporta any tipos você é possível especificar objeto como seu tipo. No sistema de tipo unificado do C#, todos os tipos, predefinidos
+Array, vetor ou matriz define o armazenamento de multiplos dados em um único elemento. A delcaração de uma matriz é feita definindo o tipo de seus elementos.
+Para definir que um array suporte any tipos é preciso especificar objeto como seu tipo. No sistema de tipo unificado do C#, todos os tipos, predefinidos
 e definidos pelo usuário, tipos de referência e tipos de valor, herdam direta ou indiretamente do objeto.
 
 > type[] arrayName;
-
-<br>
 
 O exemplo a seguir cria matrizes unidimensionais, multidimensionais e irregulares:
 
@@ -386,7 +408,7 @@ Um Array tem as propriedades a seguir:
   </li>
   <li>
     Os tipos de array são tipos de referência derivados do tipo base abstrato Array. Todas as matrizes implementam IList e IEnumerable.
-    Você pode usar matrizes de iteração   foreach em C #. Uma vez que as matrizes de dimensão única também implementam IList <T> e IEnumerable <T>.
+    Você pode usar matrizes de iteração foreach em C#. Uma vez que as matrizes de dimensão única também implementam IList<T> e IEnumerable<T>.
   </li>
 </ul>
 
@@ -396,7 +418,7 @@ Um Array tem as propriedades a seguir:
 </div>
 
 
-C# fornece vários operadores. Muitos deles são suportados pelos tipos internos e permitem que a execução de operações básicas com valores desses tipos.
+O C# fornece vários operadores. Muitos deles são suportados pelos tipos internos e permitem que a execução de operações básicas com valores desses tipos.
 Esses operadores incluem os seguintes grupos:
 
 
@@ -410,7 +432,7 @@ Os seguintes operadores realizam operações aritméticas com operandos unários
 
 
 O operador de incremento unário ++ incrementa seu operando em 1. O operando deve ser uma variável, um acesso de propriedade ou um acesso de indexador.
-O operador de incremento é suportado em duas formas: o operador de incremento postfix, x ++, e o operador de incremento de prefixo, ++ x.
+O operador de incremento é suportado em duas formas: o operador de incremento pós-fixado, x ++, e o operador de incremento de pré-fixo, ++ x.
 
 
 <h2>Pós Fixado X++</h2>
@@ -439,7 +461,7 @@ O resultado de ++ x é o valor de x após a operação, como mostra o exemplo a 
 
 
 O operador de decremento unário - diminui seu operando em 1. O operando deve ser uma variável, um acesso de propriedade ou um acesso de indexador.
-O operador de decremento é suportado em duas formas: o operador de decremento postfix, x--, e o operador de decremento de prefixo, --x.
+O operador de decremento é suportado em duas formas: o operador de decremento pós-fixado, x--, e o operador de decremento de pré-fixo, --x.
 
 
 <h2>Pós Fixado X--</h2>
@@ -539,7 +561,7 @@ O operador restante% calcula o restante após dividir seu operando à esquerda p
 <h2>Números Inteiros</h2>
 
 
-Para os operandos de tipos inteiros, o resultado de a% b é o valor produzido por a - (a / b) * b. O sinal do resto diferente de zero é o mesmo do
+Para os operandos de tipos inteiros, o resultado de a % b é o valor produzido por a - (a / b) * b. O sinal do resto diferente de zero é o mesmo do
 operando esquerdo, como mostra o exemplo a seguir:
 
 
