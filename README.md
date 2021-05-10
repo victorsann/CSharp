@@ -44,7 +44,6 @@ Os tipos se manifestam de duas formas no C#: value types e reference types;
 
 <br>
 
-
 <h1>Value Types</h1>
 
 Variáveis de value types cotém diretamente seus valores. Os tipos valores internos do Value Types são divididos em simple types, enum types, structure
