@@ -922,42 +922,6 @@ O operador >= retorna verdadeiro se seu operando à esquerda for maior ou igual 
     Console.WriteLine(double.NaN >= 5.1);  // output: False
 
 
-<h2>Operadores de Acesso</h2>
-
-
-Os seguintes operadores e expressões são usados ao acessar um membro de tipo:
-
-
-<h2>Acesso de Membro</h2>
-
-
-Para acessar um membro de um namespace ou tipo usa-se o token . , como o exemplo a seguir demonstra:
-
-> using System.Collections.Generic;
-
-
-<h2>Operador indexador []</h2>
-
-
-Colchetes, [], são normalmente usados para acesso a array, indexador ou elemento de ponteiro. O exemplo a seguir demonstra como acessar
-os elementos da matriz:
-
-    int[] fib = new int[10];
-    fib[0] = fib[1] = 1;
-    for (int i = 2; i < fib.Length; i++)
-    {
-        fib[i] = fib[i - 1] + fib[i - 2];
-    }
-    Console.WriteLine(fib[fib.Length - 1]);  // output: 55
-    
-    double[,] matrix = new double[2,2];
-    matrix[0,0] = 1.0;
-    matrix[0,1] = 2.0;
-    matrix[1,0] = matrix[1,1] = 3.0;
-    var determinant = matrix[0,0] * matrix[1,1] - matrix[1,0] * matrix[0,1];
-    Console.WriteLine(determinant);  // output: -3
-
-
 <h1>Operadores de Teste</h1>
 
 
@@ -1011,56 +975,4 @@ Como mostrado no exemplo anterior, a sintaxe do operador condicional é a seguin
 A expressão de condição deve ser avaliada como verdadeira ou falsa. Se a condição for avaliada como verdadeira, a expressão consequente será avaliada e
 seu resultado se tornará o resultado da operação. Se a condição for avaliada como falsa, a expressão alternativa será avaliada e seu resultado se tornará
 o resultado da operação. Apenas consequente ou alternativa é avaliada.
-
-
-<h1>?? e ?? = operadores</h1>
-
-
-O operador de coalescência nula ?? retorna o valor de seu operando à esquerda, se não for nulo; caso contrário, avalia o operando à direita e retorna seu
-resultado. O operador ?? não avalia seu operando à direita se o operando à esquerda for avaliado como não nulo.
-
-<br>
-
-Disponível no C# 8.0 e posterior, o operador de atribuição de coalescência nula ??= atribui o valor de seu operando à direita a seu operando à esquerda
-apenas se o operando à esquerda for avaliado como nulo. O operador ??= não avalia seu operando à direita se o operando à esquerda for avaliado como não
-nulo.
-
-
-    List<int> numbers = null;
-    int? a = null;
-    
-    (numbers ??= new List<int>()).Add(5);
-    Console.WriteLine(string.Join(" ", numbers));  // output: 5
-    
-    numbers.Add(a ??= 0);
-    Console.WriteLine(string.Join(" ", numbers));  // output: 5 0
-    Console.WriteLine(a);  // output: 0
-
-
-O operando à esquerda do operador ??= deve ser uma variável, uma propriedade ou um elemento indexador.
-
-<br>
-
-No C# 7.3 e anteriores, o tipo de operando esquerdo do ?? deve ser um tipo de referência ou um tipo de valor anulável. Começando com C# 8.0,
-esse requisito é substituído pelo seguinte: o tipo de operando esquerdo do ?? e ??= operadores não podem ser um tipo de valor não anulável. Dentro
-Em particular, começando com C# 8.0, é possível usar os operadores de coalescência nula com parâmetros de tipo irrestritos:
-
-
-    private static void Display<T>(T a, T backup)
-    {
-        Console.WriteLine(a ?? backup);
-    }
-    
-
-Os operadores de coalescência nula são associativos à direita. Ou seja, expressões da forma:
-
-
-    a ?? b ?? c
-    d ??= e ??= f
-    
-
-são avaliados como:
-
-    a ?? (b ?? c)
-    d ??= (e ??= f)
 
