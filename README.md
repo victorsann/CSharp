@@ -432,13 +432,14 @@ Os seguintes operadores realizam operações aritméticas com operandos unários
 
 
 O operador de incremento unário ++ incrementa seu operando em 1. O operando deve ser uma variável, um acesso de propriedade ou um acesso de indexador.
-O operador de incremento é suportado em duas formas: o operador de incremento pós-fixado, x ++, e o operador de incremento de pré-fixo, ++ x.
+O operador de incremento é suportado em duas formas: o operador de incremento pós-fixado, x++, e o operador de incremento de pré-fixo, ++x.
 
 
 <h2>Pós Fixado X++</h2>
 
 
 O resultado de x ++ é o valor de x antes da operação, como mostra o exemplo a seguir:
+
 
     int i = 3;
     Console.WriteLine(i);   // output: 3
@@ -450,6 +451,7 @@ O resultado de x ++ é o valor de x antes da operação, como mostra o exemplo a
 
 
 O resultado de ++ x é o valor de x após a operação, como mostra o exemplo a seguir:
+
 
     double a = 1.5;
     Console.WriteLine(a);   // output: 1.5
@@ -469,6 +471,7 @@ O operador de decremento é suportado em duas formas: o operador de decremento p
 
 O resultado de x-- é o valor de x antes da operação, como mostra o exemplo a seguir:
 
+
     int i = 3;
     Console.WriteLine(i);   // output: 3
     Console.WriteLine(i--); // output: 3
@@ -478,6 +481,7 @@ O resultado de x-- é o valor de x antes da operação, como mostra o exemplo a 
 
 
 O resultado de --x é o valor de x após a operação, como mostra o exemplo a seguir:
+
 
     double a = 1.5;
     Console.WriteLine(a);   // output: 1.5
@@ -489,6 +493,7 @@ O resultado de --x é o valor de x após a operação, como mostra o exemplo a s
 
 
 O operador unário + retorna o valor de seu operando. O operador unário - calcula a negação numérica de seu operando.
+
 
     Console.WriteLine(+4);     // output: 4
     
@@ -511,6 +516,7 @@ Os seguintes operadores realizam operações aritméticas com operandos binário
 
 O operador de multiplicação * calcula o produto de seus operandos:
 
+
     Console.WriteLine(5 * 2);         // output: 10
     Console.WriteLine(0.5 * 2.5);     // output: 1.25
     Console.WriteLine(0.1m * 23.4m);  // output: 2.34
@@ -527,6 +533,7 @@ O operador de divisão / divide seu operando à esquerda por seu operando à dir
 
 Para os operandos de tipos inteiros, o resultado do operador / é do tipo inteiro e é igual ao quociente dos dois operandos arredondados para zero:
 
+
     Console.WriteLine(13 / 5);    // output: 2
     Console.WriteLine(-13 / 5);   // output: -2
     Console.WriteLine(13 / -5);   // output: -2
@@ -534,6 +541,7 @@ Para os operandos de tipos inteiros, o resultado do operador / é do tipo inteir
 
 
 Para obter o quociente dos dois operandos como um número de ponto flutuante, use o tipo flutuante, duplo ou decimal:
+
 
     Console.WriteLine(13 / 5.0);       // output: 2.6
     
@@ -546,6 +554,7 @@ Para obter o quociente dos dois operandos como um número de ponto flutuante, us
 
 
 Para os tipos float, double e decimal, o resultado do operador / é o quociente dos dois operandos:
+
 
     Console.WriteLine(16.8f / 4.1f);   // output: 4.097561
     Console.WriteLine(16.8d / 4.1d);   // output: 4.09756097560976
@@ -574,7 +583,7 @@ operando esquerdo, como mostra o exemplo a seguir:
 <h2>Números Decimais</h2>
 
 
-Para os operandos float e double, o resultado de x% y para o x e y finito é o valor z tal que:
+Para os operandos float e double, o resultado de x % y para o x e y finito é o valor z tal que:
 
 <ul>
   <li>O sinal de z, se diferente de zero, é igual ao sinal de x.</li>
@@ -588,6 +597,7 @@ Para os operandos decimais, o operador restante% é equivalente ao operador rest
 
 O exemplo a seguir demonstra o comportamento do operador resto com operandos de ponto flutuante:
 
+
     Console.WriteLine(-5.2f % 2.0f); // output: -1.2
     Console.WriteLine(5.9 % 3.1);    // output: 2.8
     Console.WriteLine(5.9m % 3.1m);  // output: 2.8
@@ -598,12 +608,10 @@ O exemplo a seguir demonstra o comportamento do operador resto com operandos de 
 
 O operador de adição + calcula a soma de seus operandos:
 
+
     Console.WriteLine(5 + 4);       // output: 9
     Console.WriteLine(5 + 4.3);     // output: 9.3
     Console.WriteLine(5.1m + 4.2m); // output: 9.3
-
-Você também pode usar o operador + para concatenação de string e combinação de delegado. Para obter mais informações, consulte o artigo sobre os
-operadores + e + =.
 
 
 <h2>Operador de Subtração -</h2>
@@ -649,8 +657,9 @@ definindo um valor lógico final com base no valor lógico dos operandos que con
 <h2>Negação !</h2>
 
 
-O operador unário de negação(!) calcula a negação lógica de seu operando. Ou seja, ele produz verdadeiro, se o operando for avaliado como falso, e falso, se
+O operador unário de negação(!) calcula a negação lógica de seu operando. Ou seja, ele produz verdadeiro se o operando for avaliado como falso, e falso, se
 o operando for avaliado como verdadeiro:
+
 
     bool passed = false;
 
@@ -661,7 +670,7 @@ o operando for avaliado como verdadeiro:
 <h2>Conjunção &</h2>
 
 
-O operador & calcula o AND lógico de seus operandos. O resultado de x e y é verdadeiro se x e y forem avaliados como verdadeiros. Caso contrário, o resultado
+O operador & calcula o AND lógico de seus operandos. O resultado de x & y é verdadeiro se x & y forem avaliados como verdadeiros. Caso contrário, o resultado
 é falso.
 
 O operador & avalia ambos os operandos, mesmo se o operando à esquerda for avaliado como falso, de modo que o resultado da operação seja falso, independentemente
@@ -691,18 +700,20 @@ No exemplo a seguir, o operando à direita do operador & é uma chamada de méto
 
     // Second operand is evaluated.
     // True
+    
 
-O operador lógico condicional AND && também calcula o AND lógico de seus operandos, mas não avalia o operando direito se o operando esquerdo for avaliado como
-falso.
+O operador lógico condicional AND && também calcula o AND lógico de seus operandos, mas não avalia o operando direito se o operando esquerdo for avaliado
+como falso.
 
 
 <h2>Conjunção Condicional &&</h2> 
 
 
 O operador AND lógico condicional &&, também conhecido como operador AND lógico de "curto-circuito", calcula o AND lógico de seus operandos. O resultado de x
-&& y é verdadeiro se xey forem avaliados como verdadeiros. Caso contrário, o resultado é falso. Se x for avaliado como falso, y não será avaliado.
+&& y é verdadeiro se x & y forem avaliados como verdadeiros. Caso contrário, o resultado é falso. Se x for avaliado como falso, y não será avaliado.
 
 No exemplo a seguir, o operando direito do operador && é uma chamada de método, que não é realizada se o operando esquerdo for avaliado como falso:
+
 
     bool SecondOperand()
     {
@@ -726,8 +737,9 @@ No exemplo a seguir, o operando direito do operador && é uma chamada de método
 
 
 O operador ^ calcula o OU exclusivo lógico, também conhecido como XOR lógico, de seus operandos. O resultado de x ^ y é verdadeiro se x for avaliado como
-verdadeiro e y for avaliado como falso, ou x for avaliado como falso ey for avaliado como verdadeiro. Caso contrário, o resultado é falso. Ou seja, para
+verdadeiro e y for avaliado como falso, ou x for avaliado como falso e y for avaliado como verdadeiro. Caso contrário, o resultado é falso. Ou seja, para
 os operandos bool, o operador ^ calcula o mesmo resultado que o operador de desigualdade !=.
+
 
     Console.WriteLine(true ^ true);    // output: False
     Console.WriteLine(true ^ false);   // output: True
@@ -738,10 +750,11 @@ os operandos bool, o operador ^ calcula o mesmo resultado que o operador de desi
 <h2>Disjunção |</h2>
 
 
-O | operador calcula o OR lógico de seus operandos. O resultado de x | y é verdadeiro se x ou y for avaliado como verdadeiro. Caso contrário, o resultado é
-falso. O | operador avalia ambos os operandos, mesmo se o operando à esquerda for avaliado como verdadeiro, de modo que o resultado da operação seja verdadeiro, independentemente do valor do operando à direita.
+O operador | calcula o OR lógico de seus operandos. O resultado de x | y é verdadeiro se x ou y for avaliado como verdadeiro. Caso contrário, o resultado é
+falso. O operador | avalia ambos os operandos, mesmo se o operando à esquerda for avaliado como verdadeiro, de modo que o resultado da operação seja verdadeiro, independentemente do valor do operando à direita.
 
-No exemplo a seguir, o operando à direita do | operador é uma chamada de método, que é realizada independentemente do valor do operando à esquerda:
+No exemplo a seguir, o operando à direita do operador | é uma chamada de método, que é realizada independentemente do valor do operando à esquerda:
+
 
     bool SecondOperand()
     {
@@ -765,6 +778,7 @@ No exemplo a seguir, o operando à direita do | operador é uma chamada de méto
     // Second operand is evaluated.
     // True
 
+
 O operador lógico condicional OU || também calcula o OR lógico de seus operandos, mas não avalia o operando à direita se o operando à esquerda for verdadeiro.
 
 
@@ -774,7 +788,7 @@ O operador lógico condicional OU || também calcula o OR lógico de seus operan
 O operador OR lógico condicional ||, também conhecido como o operador OR lógico de "curto-circuito", calcula o OR lógico de seus operandos. O resultado de
 x || y é verdadeiro se x ou y for avaliado como verdadeiro. Caso contrário, o resultado é falso. Se x for avaliado como verdadeiro, y não será avaliado.
 
-No exemplo a seguir, o operando à direita do || operador é uma chamada de método, que não é realizada se o operando esquerdo for avaliado como verdadeiro:
+No exemplo a seguir, o operando à direita do operador || é uma chamada de método, que não é realizada se o operando esquerdo for avaliado como verdadeiro:
 
 
     bool SecondOperand()
@@ -798,19 +812,20 @@ No exemplo a seguir, o operando à direita do || operador é uma chamada de mét
     // Second operand is evaluated.
     // True
 
+
 O operador lógico OR | também calcula o OR lógico de seus operandos, mas sempre avalia ambos os operandos.
 
 
 <h1>Operadores de Igualdade</h1>
 
 
-Os operadores == (igualdade) e! = (Desigualdade) verificam se seus operandos são iguais ou não.
+Os operadores == (igualdade) e != (Desigualdade) verificam se seus operandos são iguais ou não.
 
 
 <h2>Igualdade</h2>
 
 
-O operador de igualdade == retorna verdadeiro se seus operandos são iguais, falso caso contrário.
+O operador de igualdade == retorna verdadeiro se seus operandos forem iguais, falso caso contrário.
 
     int a = 1 + 2 + 3;
     int b = 6;
@@ -825,9 +840,8 @@ O operador de igualdade == retorna verdadeiro se seus operandos são iguais, fal
 <h2>Desigualdade</h2>
 
 
-O operador de desigualdade! = Retorna verdadeiro se seus operandos não forem iguais, caso contrário, falso. Para os operandos dos tipos internos, a
-expressão x! = Y produz o mesmo resultado que a expressão! (X == y). Para obter mais informações sobre a igualdade de tipo, consulte a seção Operador
-de igualdade.
+O operador de desigualdade != Retorna verdadeiro se seus operandos não forem iguais, caso contrário, falso. Para os operandos dos tipos internos, a
+expressão x != Y produz o mesmo resultado que a expressão !(X == y). 
 
 O exemplo a seguir demonstra o uso do operador != :
 
@@ -848,7 +862,7 @@ O exemplo a seguir demonstra o uso do operador != :
 <h1>Operadores de Comparação</h1>
 
 
-A comparação <(menor que), > (maior que), <= (menor ou igual) e> = (maior ou igual), também conhecida como relacional, os operadores comparam seus operandos.
+A comparação < (menor que), > (maior que), <= (menor ou igual) e >= (maior ou igual), também conhecida como relacional, compara seus operandos.
 Esses operadores são suportados por todos os tipos numéricos integrais e de ponto flutuante.
 
 
@@ -856,6 +870,7 @@ Esses operadores são suportados por todos os tipos numéricos integrais e de po
 
 
 O operador < retorna verdadeiro se seu operando à esquerda for menor que seu operando à direita, caso contrário, falso:
+
 
     Console.WriteLine(7.0 < 5.1);   // output: False
     Console.WriteLine(5.1 < 5.1);   // output: False
@@ -868,7 +883,8 @@ O operador < retorna verdadeiro se seu operando à esquerda for menor que seu op
 <h2>Maior que > </h2>
 
 
-O operador> retorna verdadeiro se seu operando à esquerda for maior que o operando à direita, caso contrário, falso:
+O operador > retorna verdadeiro se seu operando à esquerda for maior que o operando à direita, caso contrário, falso:
+
 
     Console.WriteLine(7.0 > 5.1);   // output: True
     Console.WriteLine(5.1 > 5.1);   // output: False
@@ -883,6 +899,7 @@ O operador> retorna verdadeiro se seu operando à esquerda for maior que o opera
 
 O operador <= retorna verdadeiro se seu operando à esquerda for menor ou igual ao operando à direita, caso contrário, falso:
 
+
     Console.WriteLine(7.0 <= 5.1);   // output: False
     Console.WriteLine(5.1 <= 5.1);   // output: True
     Console.WriteLine(0.0 <= 5.1);   // output: True
@@ -894,7 +911,8 @@ O operador <= retorna verdadeiro se seu operando à esquerda for menor ou igual 
 <h2>Maior ou Igual que >= </h2>
 
 
-O operador> = retorna verdadeiro se seu operando à esquerda for maior ou igual ao operando à direita, caso contrário, falso:
+O operador >= retorna verdadeiro se seu operando à esquerda for maior ou igual ao operando à direita, caso contrário, falso:
+
 
     Console.WriteLine(7.0 >= 5.1);   // output: True
     Console.WriteLine(5.1 >= 5.1);   // output: True
@@ -921,7 +939,7 @@ Para acessar um membro de um namespace ou tipo usa-se o token . , como o exemplo
 <h2>Operador indexador []</h2>
 
 
-Colchetes, [], são normalmente usados ​​para acesso a array, indexador ou elemento de ponteiro. O exemplo a seguir demonstra como acessar
+Colchetes, [], são normalmente usados para acesso a array, indexador ou elemento de ponteiro. O exemplo a seguir demonstra como acessar
 os elementos da matriz:
 
     int[] fib = new int[10];
@@ -946,7 +964,7 @@ os elementos da matriz:
 <h2>Operador is</h2>
 
 
-O operador is verifica se o tipo de tempo de execução de um resultado de expressão é compatível com um determinado tipo. Começando com C # 7.0, o operador
+O operador is verifica se o tipo de tempo de execução de um resultado de expressão é compatível com um determinado tipo. Começando com C# 7.0, o operador
 is também testa um resultado de expressão em relação a um padrão.
 
 A expressão com o operador de teste de tipo tem a seguinte forma
@@ -976,8 +994,9 @@ O operador as considera apenas as conversões de referência, anuláveis, boxing
 <h1>Operador Condicional Ternário</h1>
 
 
-O operador condicional?:, Também conhecido como operador condicional ternário, avalia uma expressão booleana e retorna o resultado de uma das duas expressões,
+O operador condicional ?:, também conhecido como operador condicional ternário, avalia uma expressão booleana e retorna o resultado de uma das duas expressões,
 dependendo se a expressão booleana for avaliada como verdadeira ou falsa, como mostra o exemplo a seguir:
+
 
     string GetWeatherDisplay(double tempInCelcius) => tempInCelcius < 20.0 ? "Cold." : "Perfect!";
     
@@ -998,12 +1017,12 @@ o resultado da operação. Apenas consequente ou alternativa é avaliada.
 
 
 O operador de coalescência nula ?? retorna o valor de seu operando à esquerda, se não for nulo; caso contrário, avalia o operando à direita e retorna seu
-resultado. O ?? operador não avalia seu operando à direita se o operando à esquerda for avaliado como não nulo.
+resultado. O operador ?? não avalia seu operando à direita se o operando à esquerda for avaliado como não nulo.
 
 <br>
 
-Disponível no C # 8.0 e posterior, o operador de atribuição de coalescência nula ?? = atribui o valor de seu operando à direita a seu operando à esquerda
-apenas se o operando à esquerda for avaliado como nulo. O operador ?? = não avalia seu operando à direita se o operando à esquerda for avaliado como não
+Disponível no C# 8.0 e posterior, o operador de atribuição de coalescência nula ??= atribui o valor de seu operando à direita a seu operando à esquerda
+apenas se o operando à esquerda for avaliado como nulo. O operador ??= não avalia seu operando à direita se o operando à esquerda for avaliado como não
 nulo.
 
 
@@ -1018,27 +1037,30 @@ nulo.
     Console.WriteLine(a);  // output: 0
 
 
-O operando à esquerda do operador ?? = deve ser uma variável, uma propriedade ou um elemento indexador.
+O operando à esquerda do operador ??= deve ser uma variável, uma propriedade ou um elemento indexador.
 
 <br>
 
-No C # 7.3 e anteriores, o tipo de operando esquerdo do ?? operador deve ser um tipo de referência ou um tipo de valor anulável. Começando com C # 8.0,
-esse requisito é substituído pelo seguinte: o tipo de operando esquerdo do ?? e ?? = operadores não podem ser um tipo de valor não anulável. Dentro
-Em particular, começando com C # 8.0, você pode usar os operadores de coalescência nula com parâmetros de tipo irrestritos:
+No C# 7.3 e anteriores, o tipo de operando esquerdo do ?? deve ser um tipo de referência ou um tipo de valor anulável. Começando com C# 8.0,
+esse requisito é substituído pelo seguinte: o tipo de operando esquerdo do ?? e ??= operadores não podem ser um tipo de valor não anulável. Dentro
+Em particular, começando com C# 8.0, é possível usar os operadores de coalescência nula com parâmetros de tipo irrestritos:
 
 
     private static void Display<T>(T a, T backup)
     {
         Console.WriteLine(a ?? backup);
     }
+    
 
-Os operadores de coalescência nula são associativos à direita. Ou seja, expressões da forma
+Os operadores de coalescência nula são associativos à direita. Ou seja, expressões da forma:
 
 
     a ?? b ?? c
     d ??= e ??= f
+    
 
-são avaliados como
+são avaliados como:
 
     a ?? (b ?? c)
     d ??= (e ??= f)
+
