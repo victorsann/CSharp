@@ -950,8 +950,7 @@ onde E é uma expressão que retorna um valor e T é o nome de um tipo ou parâm
 
 > E is T ? (T)(E) : (T)null
 
-exceto que E é avaliado apenas uma vez.
-O operador as considera apenas as conversões de referência, anuláveis, boxing e unboxing. 
+exceto que E é avaliado apenas uma vez. O operador as considera apenas as conversões de referência, anuláveis, boxing e unboxing. 
 
 
 <h1>Operador Condicional Ternário</h1>
