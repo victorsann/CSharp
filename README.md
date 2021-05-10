@@ -68,8 +68,6 @@ de referência do C# são divididos em tipos de classe, tipos de interface, tipo
 
 Os Simple Types são definidos por três tipos próprios:
 
-<br>
-
 <h3>Tipos numéricos integrais</h3>
 
 Os tipos numéricos integrais representam números inteiros. Todos os tipos numéricos integrais são tipos de valor. Eles também são tipos
