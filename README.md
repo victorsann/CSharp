@@ -38,11 +38,6 @@ ele assume a caracterítica de entry da classe Hello. Com a definição de acess
 vez possui o método WriteLine(). Esse método é o responsável por fazer o binding da string "Hello, World" no Console.
 
 
-<div align="center">
-  <h1>Fundamentos da Linguagem</h1>
-</div> 
-
-
 <h1>Tipos e Variáveis</h1>
 
 Os tipos se manifestam de duas formas no C#: value types e reference types. Variáveis de value types cotém direteamente seus valores.
