@@ -76,7 +76,7 @@ Os tipos numéricos integrais representam números inteiros. Todos os tipos num�
 simples e podem ser inicializados com literais. Todos os tipos numéricos integrais suportam operadores aritméticos, lógicos bit a bit,
 de comparação e de igualdade.
 
-### O C# suporta os seguintes tipos integrais predefinidos:
+O C# suporta os seguintes tipos integrais predefinidos:
 
 | C# Tipo/Palavra-chave  |                      Alcance                            |            Tamanho                |   .NET type   |
 | ---------------------- | ------------------------------------------------------  | --------------------------------- | ------------- | 
@@ -98,7 +98,7 @@ Os tipos numéricos de ponto flutuante representam números reais. Todos os tipo
 são tipos simples e podem ser inicializados com literais. Todos os tipos numéricos de ponto flutuante oferecem suporte a operadores aritméticos,
 de comparação e de igualdade.
 
-### O C# oferece suporte aos seguintes tipos de ponto flutuante predefinidos:
+O C# oferece suporte aos seguintes tipos de ponto flutuante predefinidos:
 
 |  C# Tipo/Palavra-chave  |         Alcance Aproxiamdo         |   Precision   |   Tamanho   |     .NET type      |
 | ----------------------- | ---------------------------------- | ------------- | ----------- | ------------------ | 
@@ -132,11 +132,9 @@ O valor padrão do tipo bool é falso.
 A palavra-chave char type é um alias para o tipo de estrutura .NET System.Char que representa um caractere Unicode UTF-16.
 
 
-<div align="center">
   |  Tipo  |      Alcance	    |   Tamanho   |  .NET type  |
   | ------ | ---------------- | ----------- | ----------- |
   |  char  | U+0000 to U+FFFF	|   16 bit    | System.Char |
-</div>
 
 
 O valor padrão de um char é \0, que equivale a U+0000.
@@ -284,8 +282,8 @@ uma classe pode implementar mais de uma interface. A tabela a seguir mostra exem
 |           Inheritance	            |                    Example                     |
 | --------------------------------- | -----------------------------------------------|
 | None	                            | class ClassA { }                               |
-| Single	                        | class DerivedClass : BaseClass { }             |
-| None, implements two interfaces	| class ImplClass : IFace1, IFace2 { }           |
+| Single	                          | class DerivedClass : BaseClass { }             |
+| None, implements two interfaces	  | class ImplClass : IFace1, IFace2 { }           |
 | Single, implements one interface	| class ImplDerivedClass : BaseClass, IFace1 { } |
 
 
