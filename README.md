@@ -58,12 +58,11 @@ de referência do C# são divididos em tipos de classe, tipos de interface, tipo
 
 <h1>Value Types</h1>
 
-
 <h2>Simple Types</h2>
 
 Os Simple Types são definidos por três tipos próprios:
 
-<h3>Tipos numéricos integrais</h3>
+<h2>Tipos numéricos integrais</h2>
 
 Os tipos numéricos integrais representam números inteiros. Todos os tipos numéricos integrais são tipos de valor. Eles também são tipos
 simples e podem ser inicializados com literais. Todos os tipos numéricos integrais suportam operadores aritméticos, lógicos bit a bit,
@@ -85,7 +84,7 @@ O C# suporta os seguintes tipos integrais predefinidos:
 | nuint                  | Depends on platform                                     | Unsigned 32-bit or 64-bit integer | System.UIntPtr|
 
 
-<h3>Tipos numéricos de ponto flutuante (referência C #)</h3>
+<h2>Tipos numéricos de ponto flutuante (referência C #)</h2>
 
 Os tipos numéricos de ponto flutuante representam números reais. Todos os tipos numéricos de ponto flutuante são tipos de valor. Eles também
 são tipos simples e podem ser inicializados com literais. Todos os tipos numéricos de ponto flutuante oferecem suporte a operadores aritméticos,
@@ -100,7 +99,7 @@ O C# oferece suporte aos seguintes tipos de ponto flutuante predefinidos:
 | decimal	                | ±1.0 x 10(-28) to ±7.9228 x 10(28) | 28-29 digits  |   16 bytes  | System.Decimal     |
 
 
-<h3>bool (referência C #)</h3>
+<h2>bool (referência C #)</h2>
 
 A palavra-chave bool type é um alias para o tipo de estrutura .NET System.Boolean que representa um valor booleano, que pode ser true ou false.
 
@@ -120,7 +119,7 @@ O valor padrão do tipo bool é falso.
     Console.WriteLine(false ? "Checked" : "Not checked");  // output: Not checked
 
 
-<h3>char (referência C #)</h3>
+<h2>char (referência C #)</h2>
 
 A palavra-chave char type é um alias para o tipo de estrutura .NET System.Char que representa um caractere Unicode UTF-16.
 
@@ -210,7 +209,7 @@ variável booleana ou booleana só pode ser verdadeira ou falsa. No entanto, em 
 ausente. Por exemplo, um campo de banco de dados pode conter verdadeiro ou falso ou pode não conter nenhum valor, ou seja, NULL. Você pode usar
 o <strong>bool?</strong> digite nesse cenário.
 
-<h3>Declaração e atribuição</h3>
+<h2>Declaração e atribuição</h2>
 
 Como um tipo de valor é implicitamente conversível no tipo de valor anulável correspondente, você pode atribuir um valor a uma variável de um
 tipo de valor anulável como faria para seu tipo de valor subjacente. Você também pode atribuir o valor nulo. Por exemplo:
@@ -415,6 +414,9 @@ Um delegate é um tipo de referência que pode ser usado para encapsular um mét
 ponteiros de função em C ++; no entanto, os delegados são protegidos contra tipos e seguros. Para aplicações de delegate, consulte
 Delegate e Delegtes Genéricos. Os delegates são a base dos eventos. Um delegate pode ser instanciado associando-o a um método
 nomeado ou anônimo.
+
+
+<h2></h2>
 
 
 <h1>Blocos de construção do programa</h1>
