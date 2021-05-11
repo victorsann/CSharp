@@ -45,7 +45,7 @@ vez possui o método WriteLine(). Esse método é o responsável por fazer o bin
 Os tipos se manifestam de duas formas no C#: value types e reference types;
 
 
-<h1>Value Types</h1>
+<h2>Value Types</h2>
 
 
 Variáveis de value types cotém diretamente seus valores. Os tipos internos do Value Types são divididos em simple types, enum types, structure
@@ -247,7 +247,7 @@ dados leve. O exemplo a seguir mostra como é possível declarar uma variável d
     // Sum of 3 elements is 4.5.
 
 
-<h1>Reference types</h1>
+<h2>Reference types</h2>
 
 
 Os tipos de dados internos do reference type são divididos em: 
