@@ -980,7 +980,7 @@ o resultado da operação. Apenas consequente ou alternativa é avaliada.
 <h1>Statement keyword</h1>
 
 
-O Statement é a definição instruções do programa para tratar, modificar e redefinir dados. Sendo este dividido nas seguintes categorias:
+O Statement é a definição instruções do programa para tratar, modificar e redefinir dados. Sendo este divididos em:
 
 
 <h2>if-else</h2>
