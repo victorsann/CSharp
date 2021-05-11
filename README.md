@@ -330,7 +330,7 @@ Posteriormente não poderá ser atribuído um valor de tipo diferente à variáv
 
 Um valor ou uma expressão pode ser atribuído durante a declaração da variável.
 
-Obs.: Variáveis explicitamente tipada que carreguem valores decimais recebem um prefixo de definição:
+Obs.: Variáveis explicitamente tipadas que carreguem valores decimais recebem um sufixo de definição:
 
 <ul>
  <li>Tipo double: d ou D</li>
