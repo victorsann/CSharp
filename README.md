@@ -950,7 +950,9 @@ onde E é uma expressão que retorna um valor e T é o nome de um tipo ou parâm
 
 > E is T ? (T)(E) : (T)null
 
-exceto que E é avaliado apenas uma vez. O operador as considera apenas as conversões de referência, anuláveis, boxing e unboxing. 
+exceto que E é avaliado apenas uma vez.
+
+O operador as considera apenas as conversões de referência, anuláveis, boxing e unboxing. 
 
 
 <h1>Operador Condicional Ternário</h1>
@@ -973,4 +975,337 @@ Como mostrado no exemplo anterior, a sintaxe do operador condicional é a seguin
 A expressão de condição deve ser avaliada como verdadeira ou falsa. Se a condição for avaliada como verdadeira, a expressão consequente será avaliada e
 seu resultado se tornará o resultado da operação. Se a condição for avaliada como falsa, a expressão alternativa será avaliada e seu resultado se tornará
 o resultado da operação. Apenas consequente ou alternativa é avaliada.
+
+
+<h1>Statement keyword</h1>
+
+
+O Statement é a definição instruções do programa para tratar, modificar e redefinir dados. Sendo este dividido nas seguintes categorias:
+
+
+<h2>if-else</h2>
+
+Uma instrução if identifica qual instrução executar com base no valor de uma expressão booleana. No exemplo a seguir, a condição da variável bool é
+definida como verdadeira e, em seguida, verificada na instrução if. A saída é A variável definida como verdadeira.
+
+
+    bool condition = true;
+    
+    if (condition)
+    {
+        Console.WriteLine("The variable is set to true.");
+    }
+    else
+    {
+        Console.WriteLine("The variable is set to false.");
+    }
+
+
+A estrutura lógica else define um caminho alternativo caso o parâmetro avaliado não corresponda a condição imposta.
+
+
+<h2>Switch</h2>
+
+O switch é uma instrução de seleção que escolhe uma única seção switch para executar a partir de uma lista de casos com base em uma correspondência
+de padrão com a expressão avaliada.
+
+
+    using System;
+    
+    public class Example
+    {
+       public static void Main()
+       {
+          int caseSwitch = 1;
+    
+          switch (caseSwitch)
+          {
+              case 1:
+                  Console.WriteLine("Case 1");
+                  break;
+              case 2:
+                  Console.WriteLine("Case 2");
+                  break;
+              default:
+                  Console.WriteLine("Default case");
+                  break;
+          }
+       }
+    }
+
+    /* The example displays the following output:
+           Case 1
+    *\
+
+A instrução switch é frequentemente usada como uma alternativa ao if-else se uma única expressão for testada em três ou mais condições.
+
+
+<h2>do</h2>
+
+
+A instrução do executa uma instrução ou um bloco de instruções enquanto uma expressão booleana especificada é avaliada como verdadeira. Como essa
+expressão é avaliada após cada execução do loop, um loop do-while é executado uma ou mais vezes. Isso difere do loop while, que é executado zero
+ou mais vezes.
+
+
+    int n = 0;
+     do
+     {
+         Console.WriteLine(n);
+         n++;
+     } while (n < 5);
+
+
+<h2>while</h2>
+ 
+
+A instrução while executa uma instrução ou um bloco de instruções enquanto uma expressão booleana especificada é avaliada como verdadeira. Como
+essa expressão é avaliada antes de cada execução do loop, um loop while é executado zero ou mais vezes. Isso difere do loop do, que é executado
+uma ou mais vezes.
+
+
+    int n = 0;
+    while (n < 5)
+    {
+        Console.WriteLine(n);
+        n++;
+    }
+
+
+<h2>for</h2>
+
+
+A instrução for executa uma instrução ou um bloco de instruções enquanto uma expressão booleana especificada é avaliada como verdadeira.
+A instrução for define as seções initializer, condition, and iterator :
+
+
+    for (initializer; condition; iterator)
+        body
+
+    //or
+
+    for ( ; ; )
+    {
+        // Body of the loop.
+    }
+
+
+Todas as três seções são opcionais. O corpo do loop é uma instrução ou um bloco de instruções. O exemplo a seguir mostra a instrução for com
+todas as seções definidas:
+
+
+    for (int i = 0; i < 5; i++)
+    {
+        Console.WriteLine(i);
+    }
+
+
+<h2>foreach, in</h2>
+
+
+A instrução foreach executa uma instrução ou um bloco de instruções para cada elemento em uma instância do tipo que implementa a interface
+System.Collections.IEnumerable ou System.Collections.Generic.IEnumerable<T>, como mostra o exemplo a seguir:
+
+
+    var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 };
+    int count = 0;
+    foreach (int element in fibNumbers)
+    {
+        Console.WriteLine($"Element #{count}: {element}");
+        count++;
+    }
+
+    Console.WriteLine($"Number of elements: {count}");
+
+    /* output: 
+
+    Element #0: 0
+    Element #1: 1
+    Element #2: 1
+    Element #3: 2
+    Element #4: 3
+    Element #5: 5
+    Element #6: 8
+    Element #7: 13
+    Number of elements: 8 
+    
+    *\
+
+
+<h2>break</h2>
+
+
+A instrução break termina o loop envolvente mais próximo ou instrução switch em que aparece. O controle é passado para a instrução que segue a
+instrução encerrada, se houver.
+
+
+<h2>Example</h2>
+
+
+In this example, the conditional statement contains a counter that is supposed to count from 1 to 100; however, the break statement terminates
+the loop after 4 counts.
+
+
+    class BreakTest
+    {
+        static void Main()
+        {
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i == 5)
+                {
+                    break;
+                }
+                Console.WriteLine(i);
+            }
+    
+            // Keep the console open in debug mode.
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
+    }
+    
+    /*Output: 
+
+        1
+        2
+        3
+        4
+    *\
+
+<h2>Continue</h2>
+
+
+A instrução continue passa o controle para a próxima iteração da instrução while, do, for ou foreach em que aparece.
+
+
+<h2>Example</h2>
+
+
+In this example, a counter is initialized to count from 1 to 10. By using the continue statement in conjunction with the expression (i < 9),
+the statements between continue and the end of the for body are skipped in the iterations where i is less than 9. In the last two iterations
+of the for loop (where i == 9 and i == 10), the continue statement is not executed and the value of i is printed to the console.
+
+
+    class ContinueTest
+    {
+        static void Main()
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                if (i < 9)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
+            }
+    
+            // Keep the console open in debug mode.
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
+    }
+    
+    /* Output: 
+         9 
+         10
+    *\
+
+
+<h2>goto</h2>
+
+
+A instrução goto transfere o controle do programa diretamente para uma instrução rotulada. Um uso comum de goto é transferir o controle
+para um rótulo de switch-case específico ou o rótulo padrão em uma instrução switch. A instrução goto também é útil para sair de loops
+profundamente aninhados.
+
+
+<h2>Example</h2>
+
+
+O exemplo a seguir demonstra o uso de goto em uma instrução switch.
+
+
+    class SwitchTest
+    {
+        static void Main()
+        {
+            Console.WriteLine("Coffee sizes: 1=Small 2=Medium 3=Large");
+            Console.Write("Please enter your selection: ");
+            string s = Console.ReadLine();
+            int n = int.Parse(s);
+            int cost = 0;
+            switch (n)
+            {
+                case 1:
+                    cost += 25;
+                    break;
+                case 2:
+                    cost += 25;
+                    goto case 1;
+                case 3:
+                    cost += 50;
+                    goto case 1;
+                default:
+                    Console.WriteLine("Invalid selection.");
+                    break;
+            }
+            if (cost != 0)
+            {
+                Console.WriteLine($"Please insert {cost} cents.");
+            }
+            Console.WriteLine("Thank you for your business.");
+    
+            // Keep the console open in debug mode.
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
+    }
+    /*
+    Sample Input:  2
+    
+    Sample Output:
+    Coffee sizes: 1=Small 2=Medium 3=Large
+    Please enter your selection: 2
+    Please insert 50 cents.
+    Thank you for your business.
+    */
+
+
+<h2>return</h2>
+
+
+A instrução de retorno termina a execução do método em que aparece e retorna o controle ao método de chamada. Ele também pode retornar
+um valor opcional. Se o método for do tipo void, a instrução return pode ser omitida.
+
+
+<h2>Example</h2>
+
+
+No exemplo a seguir, o método CalculateArea () retorna a área da variável local como um valor duplo.
+
+
+    class ReturnTest
+    {
+        static double CalculateArea(int r)
+        {
+            double area = r * r * Math.PI;
+            return area;
+        }
+    
+        static void Main()
+        {
+            int radius = 5;
+            double result = CalculateArea(radius);
+            Console.WriteLine("The area is {0:0.00}", result);
+    
+            // Keep the console open in debug mode.
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
+    }
+    // Output: The area is 78.54
 
