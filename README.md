@@ -1140,8 +1140,7 @@ instrução encerrada, se houver.
 <h2>Exemplo</h2>
 
 
-In this example, the conditional statement contains a counter that is supposed to count from 1 to 100; however, the break statement terminates
-the loop after 4 counts.
+Neste exemplo, a instrução condicional contém um contador que deve contar de 1 a 100; no entanto, a instrução break termina o loop após 4 contagens.
 
 
     class BreakTest
@@ -1181,9 +1180,9 @@ A instrução continue passa o controle para a próxima iteração da instruçã
 <h2>Exemplo</h2>
 
 
-In this example, a counter is initialized to count from 1 to 10. By using the continue statement in conjunction with the expression (i < 9),
-the statements between continue and the end of the for body are skipped in the iterations where i is less than 9. In the last two iterations
-of the for loop (where i == 9 and i == 10), the continue statement is not executed and the value of i is printed to the console.
+Neste exemplo, um contador é inicializado para contar de 1 a 10. Usando a instrução continue em conjunto com a expressão (i <9),
+as declarações entre continue e o final do corpo for são ignoradas nas iterações onde i é menor que 9. Nas últimas duas iterações
+do loop for (onde i == 9 e i == 10), a instrução continue não é executada e o valor de i é impresso no console.
 
 
     class ContinueTest
