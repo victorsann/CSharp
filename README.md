@@ -1537,6 +1537,22 @@ são listados entre parênteses e separados por vírgulas. Os métodos da classe
     }
 
 
+<h2>Método Void</h2>
+
+
+O type void é usado como o tipo de retorno de um método (ou uma função local) para especificar que o método não retorna um valor.
+
+
+    public static void Display(IEnumerable<int> numbers)
+    {
+        if (numbers is null)
+        {
+            return;
+        }
+    
+        Console.WriteLine(string.Join(" ", numbers));
+    }
+
 
 <h2>Events</h2>
 
