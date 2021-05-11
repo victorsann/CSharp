@@ -1316,3 +1316,363 @@ No exemplo a seguir, o método CalculateArea () retorna a área da variável loc
     }
     // Output: The area is 78.54
 
+<h1>Blocos de Construção do Programa</h1>
+
+
+Classes e structs são dois dos pricipais blocos de construção do sistema de tipo do .NET. O C# 9 adiciona records, que são uma espécie de classe.
+Cada um é essencialmente uma estrutura de dados que encapsula um conjunto de dados e comportamentos que agem juntos como uma unidade lógica. Os
+dados e comportamentos são os membros da classe, structs ou records e incluem seus métodos, propriedades, eventos e assim por diante. A frente 
+classes serão abordados de forma mais aprofundada, enquando os demais blocos citados serão abordados posterioemente.
+
+
+<h1>Class</h1>
+
+
+Um tipo definido como uma classe é um reference type. Em tempo de execução, quando uma variável de um tipo de referência é declarada, seu valor 
+é definido como nulo até que ela seja explicitamente instânciada, seja usando o operador new ou através da atribuição de um objeto de tipo
+compatível que pode ter sido criado em outro lugar, conforme mostrado no exemplo a seguir:
+
+
+    //Declaring an object of type MyClass.
+
+    MyClass mc = new MyClass();
+    
+    //Declaring another object of the same type, assigning it the value of the first object.
+
+    MyClass mc2 = mc;
+
+
+<h2>Declarando Uma Classe</h2>
+
+
+As classes são declaradas usando a palavra-chave class seguida por um identificador exclusivo, conforme mostrado no exemplo a seguir:
+
+
+    //[access modifier] - [class] - [identifier]
+
+    public class Customer
+    {
+       // Fields, properties, methods and events go here...
+    }
+
+
+A palavra-chave class é precedida pelo nível de acesso. Como public é usado neste caso, qualquer pessoa pode criar instâncias dessa classe.
+O nome da classe segue a palavra-chave class. O nome da classe deve ser um nome de identificador C# válido. O restante da definição é o corpo
+da classe, onde o comportamento e os dados são definidos. Campos, propriedades, métodos e eventos em uma classe são chamados coletivamente de
+membros da classe.
+
+
+<h2>Acessibilidade</h2>
+
+
+Cada membro de uma classe tem uma acessibilidade associada, que controla as regiões do texto do programa que podem acessar o membro.
+Existem seis formas de acessibilidade possíveis, sendo estas chamadas de modificadores de acesso.
+
+
+<ul>
+  <li><strong>public:</strong> O acesso não é limitado.</li>
+  <li><strong>private:</strong> O acesso é limitado a esta classe.</li>
+  <li><strong>protected:</strong> O acesso é limitado a esta classe ou classes derivadas desta classe.</li>
+  <li><strong>internal:</strong> O acesso é limitado ao assembly atual (.exe ou .dll).</li>
+  <li><strong>protected internal:</strong> O acesso é limitado a esta classe, classes derivadas desta classe ou classes dentro do mesmo assembly.</li>
+  <li><strong>private protected:</strong>O acesso é limitado a esta classe ou classes derivadas deste tipo dentro do mesmo assembly.</li>
+</ul>
+
+
+<h2>Criando Objetos</h2>
+
+
+Embora às vezes sejam usados alternadamente, uma classe e um objeto são coisas diferentes. Uma classe define um tipo de objeto, mas não é um
+objeto em si. Um objeto é uma entidade concreta com base em uma classe e às vezes é referido como uma instância de uma classe.
+
+
+Os objetos podem ser criados usando a palavra-chave new seguida do nome da classe na qual o objeto será baseado:
+
+
+    Customer object1 = new Customer();
+
+
+<h2>Herança de Classe</h2>
+
+
+As classes oferecem suporte total à herança, uma característica fundamental da programação orientada a objetos. Ao criar uma classe, é possível
+herdar de qualquer outra classe que não esteja definida como sealed, e outras classes podem herdar da classe recém criada e substituir os métodos
+virtuais de classe. Além disso, é possível implementar uma ou mais interfaces.
+
+A herança é realizada usando uma derivação, o que significa que uma classe é declarada usando uma classe base da qual herda dados e comportamento.
+Uma classe base é especificada anexando-se dois pontos(:) e o nome da classe base após o nome da classe derivada, como é visto a seguir:
+
+
+    public class Manager : Employee
+    {
+        // Employee fields, properties, methods and events are inherited
+        // New Manager fields, properties, methods and events go here...
+    }
+
+
+Quando uma classe declara uma classe base, ela herda todos os membros da classe base, exceto os construtores
+
+
+<h2>Membros de Uma Classe</h2>
+
+
+Os membros de uma classe são membros estáticos ou membros de instância. Membros estáticos pertencem a classes e membros de instância
+pertencem a objetos (instâncias de classes).
+
+<br>
+
+A lista a seguir fornece uma visão geral dos tipos de membros que uma classe pode conter.
+
+
+<h2>Fields</h2>
+
+Um Field ou campo é uma variável de qualquer tipo declarada diretamente em uma classe ou estrutura. Os campos são membros de seu tipo de
+conteúdo.
+
+Para acessar um campo em um objeto, é preciso adicionar um ponto após o nome do objeto, seguido pelo nome do campo, como exemplo a seguir:
+
+
+    CalendarEntry birthday = new CalendarEntry();
+    birthday.Day = "Saturday";
+
+
+Um campo pode receber um valor inicial usando o operador de atribuição quando o campo é declarado. Para atribuir automaticamente o campo Day
+para "Monday", por exemplo, Day seria declarado como no exemplo a seguir:
+
+
+    public class CalendarDateWithInitialization
+    {
+        public string Day = "Monday";
+        //...
+    }
+
+
+<h2>Constants</h2>
+
+
+Constantes são valores imutáveis que são conhecidos em tempo de compilação e não mudam durante a vida do programa. As constantes são declaradas
+com o modificador const. Apenas os tipos internos C# (excluindo System.Object) podem ser declarados como const. Tipos definidos pelo usuário,
+incluindo classes, estruturas e matrizes, não podem ser const.
+
+As constantes devem ser inicializadas à medida em que são declaradas. Por exemplo:
+
+
+    class Calendar1
+    {
+        public const int Months = 12;
+    }
+
+
+<h2>Properties</h2>
+
+
+Uma propriedade é um membro que fornece um mecanismo flexível para ler, gravar ou calcular o valor de um campo privado. As propriedades podem ser
+usadas como se fossem membros de dados públicos, mas, na verdade, são métodos especiais chamados de accessors. Isso permite que os dados sejam
+acessados facilmente e ainda ajuda a promover a segurança e a flexibilidade dos métodos.
+
+
+
+
+<h2>Methods</h2>
+
+
+Um método é um bloco de código que contém uma série de instruções. Um programa faz com que as instruções sejam executadas chamando o método e
+especificando quaisquer argumentos de método necessários. Em C#, toda instrução executada é realizada no contexto de um método.
+
+O método Main é o ponto de entrada para cada aplicativo C# e é chamado pelo common language runtime (CLR) quando o programa é iniciado.
+
+Os métodos são declarados em uma classe, estrutura ou interface especificando o nível de acesso como public  ou private, modificadores opcionais
+como abstract  ou sealed, o valor de retorno, o nome do método e quaisquer parâmetros do método. Essas partes juntas são a assinatura do método.
+
+Os parâmetros do método são colocados entre parênteses e separados por vírgulas. Parênteses vazios indicam que o método não requer parâmetros.
+A classe a seguir contém quatro métodos:
+
+
+    abstract class Motorcycle
+    {
+        // Anyone can call this.
+
+        public void StartEngine() {/* Method statements here */ }
+    
+        // Only derived classes can call this.
+
+        protected void AddGas(int gallons) { /* Method statements here */ }
+    
+        // Derived classes can override the base class implementation.
+
+        public virtual int Drive(int miles, int speed) { /* Method statements here */ return 1; }
+    
+        // Derived classes must implement this.
+
+        public abstract double GetTopSpeed();
+    }
+
+
+<h2>Acessando um Método</h2>
+
+
+Chamar um método em um objeto é como acessar um campo. Após o nome do objeto, adicione um ponto, o nome do método e parênteses. Os argumentos
+são listados entre parênteses e separados por vírgulas. Os métodos da classe Motorcycle podem, portanto, ser chamados como no exemplo a seguir:
+
+
+    class TestMotorcycle : Motorcycle
+    {
+    
+        public override double GetTopSpeed()
+        {
+            return 108.4;
+        }
+    
+        static void Main()
+        {
+    
+            TestMotorcycle moto = new TestMotorcycle();
+    
+            moto.StartEngine();
+            moto.AddGas(15);
+            moto.Drive(5, 20);
+            double speed = moto.GetTopSpeed();
+            Console.WriteLine("My top speed is {0}", speed);
+        }
+    }
+
+
+
+<h2>Events</h2>
+
+
+Os eventos permitem que uma classe ou objeto notifique outras classes ou objetos quando algo de interesse ocorre. A classe que envia (ou gera) o
+evento é chamada de publisher e as classes que recebem (ou tratam) o evento são chamadas de subscribers.
+
+
+<h2>Operators</h2>
+
+O C# fornece vários operadores. Muitos deles são suportados pelos tipos integrados e permitem a execução de operações básicas com valores desses
+tipos. Os operadores foram abordados anteriormente.
+
+
+<h2>Indexers</h2>
+
+Os indexadores permitem que instâncias de uma classe ou estrutura sejam indexadas da mesma forma que os arrays. O valor indexado pode ser definido
+ou recuperado sem especificar explicitamente um tipo ou membro de instância. Os indexadores se parecem com propriedades, exceto que seus acessadores
+usam parâmetros.
+
+O exemplo a seguir define uma classe genérica com métodos acessadores get e set simples para atribuir e recuperar valores. A classe Program cria uma
+instância dessa classe para armazenar strings.
+
+
+    using System;
+    
+    class SampleCollection<T>
+    {
+       // Declare an array to store the data elements.
+       private T[] arr = new T[100];
+    
+       // Define the indexer to allow client code to use [] notation.
+       public T this[int i]
+       {
+          get { return arr[i]; }
+          set { arr[i] = value; }
+       }
+    }
+    
+    class Program
+    {
+       static void Main()
+       {
+          var stringCollection = new SampleCollection<string>();
+          stringCollection[0] = "Hello, World";
+          Console.WriteLine(stringCollection[0]);
+       }
+    }
+    // The example displays the following output:
+    //       Hello, World.
+
+
+<h2>Constructors</h2>
+
+
+Sempre que uma classe ou estrutura é criada, seu construtor é chamado. Uma classe ou estrutura pode ter vários construtores que aceitam argumentos
+diferentes. Os construtores permitem ao programador definir valores padrão, limitar a instanciação e escrever código flexível e fácil de ler. 
+
+
+<h2>Constructors sem Parâmetros</h2>
+
+
+Se um construtor bão for oferecido para a criada classe, o C# cria um por padrão que instancia o objeto e define variáveis ​​de membro para os valores
+padrão. Caso um construtor não for definido para a estrutura, o C# depende de um construtor implícito sem parâmetros para inicializar automaticamente
+cada campo com seu valor padrão.
+
+
+<h2>Sintaxe de um Constructor</h2>
+
+
+Um construtor é um método cujo nome é igual ao nome de seu tipo. Sua assinatura de método inclui apenas o nome do método e sua lista de parâmetros;
+não inclui um tipo de retorno. O exemplo a seguir mostra o construtor de uma classe chamada Person.
+
+
+    public class Person
+    {
+       private string last;
+       private string first;
+    
+       public Person(string lastName, string firstName)
+       {
+          last = lastName;
+          first = firstName;
+       }
+    
+       // Remaining implementation of Person class.
+    }
+
+
+<h2>Finalizers</h2>
+
+
+Finalizadores(que também são chamados de destruidores) são usados ​​para realizar qualquer limpeza final necessária quando uma instância de classe está
+sendo coletada pelo garbage collector. Abaixo estão listadas as expecificações relacionadas a um finalizaer:
+
+<ul>
+  <li>Finalizadores não podem ser definidos em structs. Eles são usados ​​apenas com classes.</li>
+  
+  <li>Uma classe pode ter apenas um finalizador.</li>
+  
+  <li>Os finalizadores não podem ser herdados ou sobrecarregados.</li>
+  
+  <li>Finalizadores não podem ser chamados. Eles são chamados automaticamente.</li>
+  
+  <li>Um finalizador não aceita modificadores ou parâmetros.</li>
+</ul>
+
+Por exemplo, a seguir está uma declaração de um finalizador para a classe Car:
+
+
+    class Car
+    {
+        ~Car()  // finalizer
+        {
+            // cleanup statements...
+        }
+    }
+
+
+
+<h2>Nested Types</h2>
+
+
+Um tipo definido em uma classe, estrutura ou interface é chamado de tipo aninhado. Por exemplo:
+
+
+    public class Container
+    {
+        class Nested
+        {
+            Nested() { }
+        }
+    }
+
+
+Independentemente de o tipo externo ser uma classe, interface ou estrutura, os tipos aninhados são privados como padrão; eles são
+acessíveis apenas a partir do tipo que os contém. No exemplo anterior, a classe Nested é inacessível para tipos externos.
+
+
