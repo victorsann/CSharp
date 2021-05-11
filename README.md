@@ -990,13 +990,13 @@ o resultado da operação. Apenas consequente ou alternativa é avaliada.
   <h1>Statement keyword</h1>
 </div>
 
-O Statement é a definição instruções do programa para tratar, modificar e redefinir dados. Sendo este divididos em:
+O Statement é definido por instruções do programa para tratar, modificar e redefinir dados utilizando estruturas lógicas. Sendo este divididos em:
 
 
 <h2>if-else</h2>
 
 Uma instrução if identifica qual instrução executar com base no valor de uma expressão booleana. No exemplo a seguir, a condição da variável bool é
-definida como verdadeira e, em seguida, verificada na instrução if. A saída é A variável definida como verdadeira.
+definida como verdadeira e, em seguida, verificada na instrução if. A saída é a variável definida como verdadeira.
 
 
     bool condition = true;
