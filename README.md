@@ -983,7 +983,7 @@ o resultado da operação. Apenas consequente ou alternativa é avaliada.
 O Statement é a definição instruções do programa para tratar, modificar e redefinir dados. Sendo este divididos em:
 
 
-<h2>if-else</h2>
+<h1>if-else</h1>
 
 Uma instrução if identifica qual instrução executar com base no valor de uma expressão booleana. No exemplo a seguir, a condição da variável bool é
 definida como verdadeira e, em seguida, verificada na instrução if. A saída é A variável definida como verdadeira.
@@ -1004,7 +1004,7 @@ definida como verdadeira e, em seguida, verificada na instrução if. A saída �
 A estrutura lógica else define um caminho alternativo caso o parâmetro avaliado não corresponda a condição imposta.
 
 
-<h2>Switch</h2>
+<h1>Switch</h1>
 
 O switch é uma instrução de seleção que escolhe uma única seção switch para executar a partir de uma lista de casos com base em uma correspondência
 de padrão com a expressão avaliada.
@@ -1038,7 +1038,7 @@ de padrão com a expressão avaliada.
 A instrução switch é frequentemente usada como uma alternativa ao if-else se uma única expressão for testada em três ou mais condições.
 
 
-<h2>do</h2>
+<h1>do</h1>
 
 
 A instrução do executa uma instrução ou um bloco de instruções enquanto uma expressão booleana especificada é avaliada como verdadeira. Como essa
@@ -1054,7 +1054,7 @@ ou mais vezes.
      } while (n < 5);
 
 
-<h2>while</h2>
+<h1>while</h1>
  
 
 A instrução while executa uma instrução ou um bloco de instruções enquanto uma expressão booleana especificada é avaliada como verdadeira. Como
@@ -1070,7 +1070,7 @@ uma ou mais vezes.
     }
 
 
-<h2>for</h2>
+<h1>for</h1>
 
 
 A instrução for executa uma instrução ou um bloco de instruções enquanto uma expressão booleana especificada é avaliada como verdadeira.
@@ -1098,7 +1098,7 @@ todas as seções definidas:
     }
 
 
-<h2>foreach, in</h2>
+<h1>foreach, in</h1>
 
 
 A instrução foreach executa uma instrução ou um bloco de instruções para cada elemento em uma instância do tipo que implementa a interface
@@ -1130,7 +1130,7 @@ System.Collections.IEnumerable ou System.Collections.Generic.IEnumerable<T>, com
     *\
 
 
-<h2>break</h2>
+<h1>break</h1>
 
 
 A instrução break termina o loop envolvente mais próximo ou instrução switch em que aparece. O controle é passado para a instrução que segue a
@@ -1171,7 +1171,7 @@ Neste exemplo, a instrução condicional contém um contador que deve contar de 
         4
     *\
 
-<h2>Continue</h2>
+<h1>Continue</h1>
 
 
 A instrução continue passa o controle para a próxima iteração da instrução while, do, for ou foreach em que aparece.
@@ -1211,7 +1211,7 @@ do loop for (onde i == 9 e i == 10), a instrução continue não é executada e 
     *\
 
 
-<h2>goto</h2>
+<h1>goto</h1>
 
 
 A instrução goto transfere o controle do programa diretamente para uma instrução rotulada. Um uso comum de goto é transferir o controle
@@ -1272,7 +1272,7 @@ O exemplo a seguir demonstra o uso de goto em uma instrução switch.
     */
 
 
-<h2>return</h2>
+<h1>return</h1>
 
 
 A instrução de retorno termina a execução do método em que aparece e retorna o controle ao método de chamada. Ele também pode retornar
