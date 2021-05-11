@@ -1033,9 +1033,7 @@ de padrão com a expressão avaliada.
        }
     }
 
-    /* The example displays the following output:
-           Case 1
-    *\
+    /* The example displays the following output: case 1 *\
 
 A instrução switch é frequentemente usada como uma alternativa ao if-else se uma única expressão for testada em três ou mais condições.
 
