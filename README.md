@@ -1139,7 +1139,7 @@ A instrução break termina o loop envolvente mais próximo ou instrução switc
 instrução encerrada, se houver.
 
 
-<h2>Example</h2>
+<h2>Exemplo</h2>
 
 
 In this example, the conditional statement contains a counter that is supposed to count from 1 to 100; however, the break statement terminates
@@ -1180,7 +1180,7 @@ the loop after 4 counts.
 A instrução continue passa o controle para a próxima iteração da instrução while, do, for ou foreach em que aparece.
 
 
-<h2>Example</h2>
+<h2>Exemplo</h2>
 
 
 In this example, a counter is initialized to count from 1 to 10. By using the continue statement in conjunction with the expression (i < 9),
@@ -1222,7 +1222,7 @@ para um rótulo de switch-case específico ou o rótulo padrão em uma instruç�
 profundamente aninhados.
 
 
-<h2>Example</h2>
+<h2>Exemplo</h2>
 
 
 O exemplo a seguir demonstra o uso de goto em uma instrução switch.
@@ -1282,7 +1282,7 @@ A instrução de retorno termina a execução do método em que aparece e retorn
 um valor opcional. Se o método for do tipo void, a instrução return pode ser omitida.
 
 
-<h2>Example</h2>
+<h2>Exemplo</h2>
 
 
 No exemplo a seguir, o método CalculateArea () retorna a área da variável local como um valor duplo.
