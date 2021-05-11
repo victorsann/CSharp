@@ -35,6 +35,7 @@ chamada de Hello possui apenas o método Main() como seu recurso. Sendo definido
 ele assume a caracterítica de entry da classe Hello. Com a definição de acesso aos recursos do System é possível usar a classe Console, que por sua
 vez possui o método WriteLine(). Esse método é o responsável por fazer o binding da string "Hello, World" no Console.
 
+<br>
 
 <div align="center">
   <h1>Tipos e Variáveis</h1>
@@ -284,6 +285,8 @@ O tipo de string representa uma sequência de zero ou mais caracteres(char) Unic
 O tipo dinâmico indica que o uso da variável e as referências a seus membros ignoram a verificação de tipo em tempo de compilação. Em vez disso, 
 essas operações são resolvidas em tempo de execução. 
 
+<br>
+
 <div align="center">
    <h1>Variáveis e Constantes</h1>
 </div>
@@ -412,6 +415,7 @@ Um Array tem as propriedades a seguir:
   </li>
 </ul>
 
+<br>
 
 <div align="center">
   <h1>Operadores</h1>
@@ -921,9 +925,11 @@ O operador >= retorna verdadeiro se seu operando à esquerda for maior ou igual 
     Console.WriteLine(double.NaN < 5.1);   // output: False
     Console.WriteLine(double.NaN >= 5.1);  // output: False
 
+<br>
 
-<h1>Operadores de Teste</h1>
-
+<div align="center">
+  <h1>Operadores de Teste</h1>
+</div>
 
 <h2>Operador is</h2>
 
@@ -954,9 +960,11 @@ exceto que E é avaliado apenas uma vez.
 
 O operador as considera apenas as conversões de referência, anuláveis, boxing e unboxing. 
 
+<br>
 
-<h1>Operador Condicional Ternário</h1>
-
+<div align="center">
+  <h1>Operador Condicional Ternário</h1>
+</div>
 
 O operador condicional ?:, também conhecido como operador condicional ternário, avalia uma expressão booleana e retorna o resultado de uma das duas expressões,
 dependendo se a expressão booleana for avaliada como verdadeira ou falsa, como mostra o exemplo a seguir:
@@ -976,14 +984,16 @@ A expressão de condição deve ser avaliada como verdadeira ou falsa. Se a cond
 seu resultado se tornará o resultado da operação. Se a condição for avaliada como falsa, a expressão alternativa será avaliada e seu resultado se tornará
 o resultado da operação. Apenas consequente ou alternativa é avaliada.
 
+<br>
 
-<h1>Statement keyword</h1>
-
+<div align="center">
+  <h1>Statement keyword</h1>
+</div>
 
 O Statement é a definição instruções do programa para tratar, modificar e redefinir dados. Sendo este divididos em:
 
 
-<h1>if-else</h1>
+<h2>if-else</h2>
 
 Uma instrução if identifica qual instrução executar com base no valor de uma expressão booleana. No exemplo a seguir, a condição da variável bool é
 definida como verdadeira e, em seguida, verificada na instrução if. A saída é A variável definida como verdadeira.
@@ -1004,7 +1014,7 @@ definida como verdadeira e, em seguida, verificada na instrução if. A saída �
 A estrutura lógica else define um caminho alternativo caso o parâmetro avaliado não corresponda a condição imposta.
 
 
-<h1>Switch</h1>
+<h2>Switch</h2>
 
 O switch é uma instrução de seleção que escolhe uma única seção switch para executar a partir de uma lista de casos com base em uma correspondência
 de padrão com a expressão avaliada.
@@ -1038,7 +1048,7 @@ de padrão com a expressão avaliada.
 A instrução switch é frequentemente usada como uma alternativa ao if-else se uma única expressão for testada em três ou mais condições.
 
 
-<h1>do</h1>
+<h2>do</h2>
 
 
 A instrução do executa uma instrução ou um bloco de instruções enquanto uma expressão booleana especificada é avaliada como verdadeira. Como essa
@@ -1054,7 +1064,7 @@ ou mais vezes.
      } while (n < 5);
 
 
-<h1>while</h1>
+<h2>while</h2>
  
 
 A instrução while executa uma instrução ou um bloco de instruções enquanto uma expressão booleana especificada é avaliada como verdadeira. Como
@@ -1070,7 +1080,7 @@ uma ou mais vezes.
     }
 
 
-<h1>for</h1>
+<h2>for</h2>
 
 
 A instrução for executa uma instrução ou um bloco de instruções enquanto uma expressão booleana especificada é avaliada como verdadeira.
@@ -1098,7 +1108,7 @@ todas as seções definidas:
     }
 
 
-<h1>foreach, in</h1>
+<h2>foreach, in</h2>
 
 
 A instrução foreach executa uma instrução ou um bloco de instruções para cada elemento em uma instância do tipo que implementa a interface
@@ -1130,7 +1140,7 @@ System.Collections.IEnumerable ou System.Collections.Generic.IEnumerable<T>, com
     *\
 
 
-<h1>break</h1>
+<h2>break</h2>
 
 
 A instrução break termina o loop envolvente mais próximo ou instrução switch em que aparece. O controle é passado para a instrução que segue a
@@ -1171,7 +1181,7 @@ Neste exemplo, a instrução condicional contém um contador que deve contar de 
         4
     *\
 
-<h1>Continue</h1>
+<h2>Continue</h2>
 
 
 A instrução continue passa o controle para a próxima iteração da instrução while, do, for ou foreach em que aparece.
@@ -1211,7 +1221,7 @@ do loop for (onde i == 9 e i == 10), a instrução continue não é executada e 
     *\
 
 
-<h1>goto</h1>
+<h2>goto</h2>
 
 
 A instrução goto transfere o controle do programa diretamente para uma instrução rotulada. Um uso comum de goto é transferir o controle
@@ -1272,7 +1282,7 @@ O exemplo a seguir demonstra o uso de goto em uma instrução switch.
     */
 
 
-<h1>return</h1>
+<h2>return</h2>
 
 
 A instrução de retorno termina a execução do método em que aparece e retorna o controle ao método de chamada. Ele também pode retornar
