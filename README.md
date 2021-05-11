@@ -426,7 +426,7 @@ O C# fornece vários operadores. Muitos deles são suportados pelos tipos intern
 Esses operadores incluem os seguintes grupos:
 
 
-<h2>Aritméticos</h2>
+<h1>Aritméticos</h1>
 
 
 Os seguintes operadores realizam operações aritméticas com operandos unários de tipos numéricos:
