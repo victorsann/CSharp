@@ -12,7 +12,7 @@ Java, sendo ambas muitas parecidas. O C# é utilizado em conjunto com a máquina
 (CLR), sendo convertida em machine code em um processo chamado de JIT. 
 
 
-<h2>Hellow World</h2>
+<h1>Hellow World</h1>
 
 
 Um dos primeiros passos ao iniciar em uma nova tecnologia é o clássico Hello World, bastante eficaz para enter a estrutura básica de uma linguagem.
