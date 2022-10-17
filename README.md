@@ -6,17 +6,29 @@
 <img src="https://img.shields.io/static/v1?label=CSHARP&message=Language&color=purple&style=for-the-badge&logo="/>
 
 
-Desenvolvida e mantida pela Micrsoft, o C# é uma linguagem de programação moderna, orientada a objetos e fortemente tipada. Criada com o intuito de 
-suprir a necessidade que a Microsoft tinha de uma linguagem que atendesse a requisição de ser multiplataforma, substituindo a anteriormente utilizada
-Java, sendo ambas muitas parecidas. O C# é utilizado em conjunto com a máquina virtual disponibilizada pelo .NET, cgamada de Common Language Runtime
-(CLR), sendo convertida em machine code em um processo chamado de JIT. 
+Desenvolvida e mantida pela Microsoft, C# é uma linguagem de programação moderna, orientada a objetos e fortemente tipada. A linguagem permite a criação de unúmeros tipos de aplicações robustas e seguras que serão executadas no ambiente .Net. Sendo fortemente inspirada na família C de linguagens, o C# é imediatamente familiar a desenvolvedores C, C++, Java e JavaScript.
 
+Criada com o intuito de compor o ambiente .Net e ser executada no próprio, este sendo um sistema de execução virtual composto por uma common language runtime (CRL) e um conjuto de bibliotecas de classes. A CRL é a implementação de uma common language infrastructure (CLI) desenvolvida pela Microsoft. A CLI, por sua vez, é a base para a criação, execução e desenvolvimento do ambiente no qual lianguagens e suas bibliotecas trabalham em conjunto.
+
+<h1>Build Process</h1>
+
+O código fonte escrito em C# é compilado em uma [intermediate language](https://learn.microsoft.com/en-us/dotnet/standard/managed-code)(IL) que está em conformidade com as especificações da CLI. O código IL e seus recursos, tais como bitmaps e strings, são armazenados em um assembly(conjunto), normalmente sendo um arquivo <i>.dll</i>. Esse arquivo ainda contém um manifesto que descreve informações sobre o tipo de assembly, sua versão e cultura.
+
+Quando um programa em C# é executado, o assembly é carregado na CLR. Com isso, a CLR performa a conversão da intermediate language através do  Just-in-time compilation process para obter código nativo. A CLR ainda provê outros serviços relacionados com a coleta automática de lixo (ou garbage collection), manipulação de exceções e gerenciamento de recursos. 
+
+<h1>.NET</h1>
+
+Como mencionado anterormente, o C# compõe o ambiente .NET. Descrevendo de forma simplória, o .NET é uma plataforma de desenvolvimento de aplicações de diversas proporções e tipos, que se estendem de <i>console apps</i> a <i>API's</i> robustas ou mesmo <i>games</i>. A plataforma ainda conta com inúmeras features que são constantemente atualizadas para permitir que os desenvolvedores escrevam de forma produtiva códigos confiáveis ​​e de alto desempenho.
+
+<h2>Using .NET</h2>
+
+Aplicações e bibliotecas .NET são desenvolvidas a partir de um código fonte (C#, F# ou Visual Basic) e um arquivo de projeto, utilizando a [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/) ou um ambiente de desenvolvimento integrado (IDE), como o [Visual Studio](https://visualstudio.microsoft.com/). 
+
+Entender a plataforma na qual a linguagem em questão opera, como esta é compilada e quais recursos são disponibilizados para cumprir este propósito, é essecial para se obter proficiência na mesma. Tendo isso em mente, para que seja possível prosseguir nos meandros da linguagem da qual esta documentação se trata, é preciso ter instalado o ambiente de criação mínimo, sendo neste caso uma IDE.
 
 <h1>Hellow World</h1>
 
-
-Um dos primeiros passos ao iniciar em uma nova tecnologia é o clássico Hello World, bastante eficaz para enter a estrutura básica de uma linguagem.
-Sendo assim, abaixo está um exemplo de Hellow World em C#:
+Um dos primeiros passos ao iniciar em uma nova tecnologia é o clássico Hello World, bastante eficaz para enter a estrutura básica de uma linguagem. Sendo assim, abaixo está um exemplo de Hellow World em C#:
 
 
       using System;
@@ -29,17 +41,11 @@ Sendo assim, abaixo está um exemplo de Hellow World em C#:
           }
       }
 
-O "Hello World" começa com a diretiva <strong>using</strong> que referencia o namespace <strong>System</strong>. O namespace nada mais é que uma
-definição de acesso hierárquico aos recursos dos programas e bibliotecas C#, sendo o Console um dos vários recursos do sistema. A classe criada e
-chamada de Hello possui apenas o método Main() como seu recurso. Sendo definido como static, fazendo com que o método não precise ser referenciado,
-ele assume a caracterítica de entry da classe Hello. Com a definição de acesso aos recursos do System é possível usar a classe Console, que por sua
-vez possui o método WriteLine(). Esse método é o responsável por fazer o binding da string "Hello, World" no Console.
+O "Hello World" começa com a diretiva <strong>using</strong> que referencia o namespace <strong>System</strong>. O namespace nada mais é que uma definição de acesso hierárquico aos recursos dos programas e bibliotecas C#, sendo o Console um dos vários recursos do sistema. A classe criada e chamada de Hello possui apenas o método Main() como seu recurso. Sendo definido como static, fazendo com que o método não precise ser referenciado, ele assume a caracterítica de entry da classe Hello. Com a definição de acesso aos recursos do System é possível usar a classe Console, que por sua vez possui o método WriteLine(). Esse método é o responsável por fazer o binding da string "Hello, World" no Console.
 
-<br>
+<h1>Tipos e Variáveis</h1>
 
-<div align="center">
-  <h1>Tipos e Variáveis</h1>
-</div>
+Sendo uma linguagem orientada a objetos, ```component-oriented```, o C# provê estruturas de desenvolvimento para suprir diretamente estes conceitos
 
 
 Os tipos se manifestam de duas formas no C#: value types e reference types;
