@@ -26,8 +26,7 @@ Descrevendo de forma simplória, o .NET é uma plataforma de desenvolvimento de 
 - [Garbage collection](https://learn.microsoft.com/en-us/dotnet/standard/automatic-memory-management)
 - [Generic types](https://learn.microsoft.com/en-us/dotnet/standard/generics)
 - [LINQ (Language Integrated Query).](https://learn.microsoft.com/en-us/dotnet/standard/linq/)
-- [Parallel programming](https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/)<br>
- Type inference [C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#specifying-types-in-variable-declarations), [F#](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-inference), [Visual Basic.](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)
+- [Parallel programming](https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/)
 - [Type system](https://learn.microsoft.com/en-us/dotnet/standard/base-types/common-type-system)
 - [Unsafe code](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/unsafe-code)
 
@@ -39,7 +38,7 @@ Quando um programa em C# é executado, o assembly é carregado na CLR. Com isso,
 
 <h2>Using .NET</h2>
 
-Aplicações e bibliotecas .NET são desenvolvidas a partir de um código fonte (C#, F# ou Visual Basic) e um arquivo de projeto, utilizando a [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/) ou um ambiente de desenvolvimento integrado (IDE), como o [Visual Studio](https://visualstudio.microsoft.com/). 
+Aplicações e bibliotecas .NET são desenvolvidas a partir de um código fonte ([C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#specifying-types-in-variable-declarations), [F#](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-inference) ou [Visual Basic](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)) e um arquivo de projeto, utilizando a [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/) ou um ambiente de desenvolvimento integrado (IDE), como o [Visual Studio](https://visualstudio.microsoft.com/). 
 
 para que seja possível prosseguir nos meandros da linguagem da qual esta documentação se trata, é preciso ter instalado o ambiente de criação mínimo, sendo neste caso uma IDE.
 
