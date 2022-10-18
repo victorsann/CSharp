@@ -16,20 +16,20 @@ Entender a plataforma na qual a linguagem em questão opera, se e como esta é c
 
 Descrevendo de forma simplória, o .NET é uma plataforma de desenvolvimento de aplicações de diversas proporções e tipos, que se estendem de <i>console apps</i> a <i>API's</i> robustas, mobile apps, ou mesmo <i>games</i>. A plataforma ainda conta com inúmeras features que são constantemente atualizadas para permitir que os desenvolvedores escrevam de forma produtiva códigos confiáveis ​​e de alto desempenho. Alugmas delas são:
 
-- [Asynchronous code]()
-- [Attributes]()
-- [Reflection]()
-- [Code analyzers]()
-- [Delegates and lambdas]()
-- [Events]()
-- [Exceptions]()
-- [Garbage collection]()
-- [Generic types]()
-- [LINQ (Language Integrated Query).]()
-- [Parallel programming]()
-- [Type inference - C#, F#, Visual Basic.]()
-- [Type system]()
-- [Unsafe code]()
+- [Asynchronous code](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/)
+- [Attributes](https://learn.microsoft.com/en-us/dotnet/standard/attributes/)
+- [Reflection](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection)
+- [Code analyzers](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview)
+- [Delegates and lambdas](https://learn.microsoft.com/en-us/dotnet/standard/delegates-lambdas)
+- [Events](https://learn.microsoft.com/en-us/dotnet/standard/events/)
+- [Exceptions](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/)
+- [Garbage collection](https://learn.microsoft.com/en-us/dotnet/standard/automatic-memory-management)
+- [Generic types](https://learn.microsoft.com/en-us/dotnet/standard/generics)
+- [LINQ (Language Integrated Query).](https://learn.microsoft.com/en-us/dotnet/standard/linq/)
+- [Parallel programming](https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/)
+- Type inference - [C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#specifying-types-in-variable-declarations), [F#](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-inference), [Visual Basic.](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)
+- [Type system](https://learn.microsoft.com/en-us/dotnet/standard/base-types/common-type-system)
+- [Unsafe code](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/unsafe-code)
 
 <h2>Arquitetura .NET</h2>
 
