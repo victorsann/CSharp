@@ -10,21 +10,39 @@ Desenvolvida e mantida pela Microsoft, C# é uma linguagem de programação mode
 
 Criada com o intuito de compor o ambiente .Net e ser executada no próprio, este sendo um sistema de execução virtual composto por uma common language runtime (CRL) e um conjuto de bibliotecas de classes. A CRL é a implementação de uma common language infrastructure (CLI) desenvolvida pela Microsoft. A CLI, por sua vez, é a base para a criação, execução e desenvolvimento do ambiente no qual lianguagens e suas bibliotecas trabalham em conjunto.
 
-<h1>Build Process</h1>
+<h1>.NET</h1>
+
+Entender a plataforma na qual a linguagem em questão opera, se e como esta é compilada e quais recursos são disponibilizados para cumprir este propósito, é essecial para se obter proficiência na mesma. Portanto, antes de destrincharmos os meandros da C#, iremos entender o básico sobre o ambiente .NET.
+
+Descrevendo de forma simplória, o .NET é uma plataforma de desenvolvimento de aplicações de diversas proporções e tipos, que se estendem de <i>console apps</i> a <i>API's</i> robustas, mobile apps, ou mesmo <i>games</i>. A plataforma ainda conta com inúmeras features que são constantemente atualizadas para permitir que os desenvolvedores escrevam de forma produtiva códigos confiáveis ​​e de alto desempenho. Alugmas delas são:
+
+- [Asynchronous code]()
+- [Attributes]()
+- [Reflection]()
+- [Code analyzers]()
+- [Delegates and lambdas]()
+- [Events]()
+- [Exceptions]()
+- [Garbage collection]()
+- [Generic types]()
+- [LINQ (Language Integrated Query).]()
+- [Parallel programming]()
+- [Type inference - C#, F#, Visual Basic.]()
+- [Type system]()
+- [Unsafe code]()
+
+<h2>Arquitetura .NET</h2>
 
 O código fonte escrito em C# é compilado em uma [intermediate language](https://learn.microsoft.com/en-us/dotnet/standard/managed-code)(IL) que está em conformidade com as especificações da CLI. O código IL e seus recursos, tais como bitmaps e strings, são armazenados em um assembly(conjunto), normalmente sendo um arquivo <i>.dll</i>. Esse arquivo ainda contém um manifesto que descreve informações sobre o tipo de assembly, sua versão e cultura.
 
-Quando um programa em C# é executado, o assembly é carregado na CLR. Com isso, a CLR performa a conversão da intermediate language através do  Just-in-time compilation process para obter código nativo. A CLR ainda provê outros serviços relacionados com a coleta automática de lixo (ou garbage collection), manipulação de exceções e gerenciamento de recursos. 
-
-<h1>.NET</h1>
-
-Como mencionado anterormente, o C# compõe o ambiente .NET. Descrevendo de forma simplória, o .NET é uma plataforma de desenvolvimento de aplicações de diversas proporções e tipos, que se estendem de <i>console apps</i> a <i>API's</i> robustas ou mesmo <i>games</i>. A plataforma ainda conta com inúmeras features que são constantemente atualizadas para permitir que os desenvolvedores escrevam de forma produtiva códigos confiáveis ​​e de alto desempenho.
+Quando um programa em C# é executado, o assembly é carregado na CLR. Com isso, a CLR performa a conversão da intermediate language através do  Just-in-time compilation process para obter código nativo. A CLR ainda provê outros serviços relacionados com a coleta automática de lixo (ou garbage collection), manipulação de exceções e gerenciamento de recursos. O código que é executado pela CLR é por vezes chamado de "managed code", já o "unmanaged code" é compilado em código nativo correspondente a plataforma especificada.
 
 <h2>Using .NET</h2>
 
 Aplicações e bibliotecas .NET são desenvolvidas a partir de um código fonte (C#, F# ou Visual Basic) e um arquivo de projeto, utilizando a [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/) ou um ambiente de desenvolvimento integrado (IDE), como o [Visual Studio](https://visualstudio.microsoft.com/). 
 
-Entender a plataforma na qual a linguagem em questão opera, como esta é compilada e quais recursos são disponibilizados para cumprir este propósito, é essecial para se obter proficiência na mesma. Tendo isso em mente, para que seja possível prosseguir nos meandros da linguagem da qual esta documentação se trata, é preciso ter instalado o ambiente de criação mínimo, sendo neste caso uma IDE.
+para que seja possível prosseguir nos meandros da linguagem da qual esta documentação se trata, é preciso ter instalado o ambiente de criação mínimo, sendo neste caso uma IDE.
+
 
 <h1>Hellow World</h1>
 
