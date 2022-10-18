@@ -27,7 +27,7 @@ Descrevendo de forma simplória, o .NET é uma plataforma de desenvolvimento de 
 - [Generic types](https://learn.microsoft.com/en-us/dotnet/standard/generics)
 - [LINQ (Language Integrated Query).](https://learn.microsoft.com/en-us/dotnet/standard/linq/)
 - [Parallel programming](https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/)
-- Type inference - [C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#specifying-types-in-variable-declarations), [F#](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-inference), [Visual Basic.](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)
+ Type inference [C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#specifying-types-in-variable-declarations), [F#](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-inference), [Visual Basic.](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)
 - [Type system](https://learn.microsoft.com/en-us/dotnet/standard/base-types/common-type-system)
 - [Unsafe code](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/unsafe-code)
 
