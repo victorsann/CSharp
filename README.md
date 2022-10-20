@@ -8,7 +8,7 @@
 
 Desenvolvida e mantida pela Microsoft, C# é uma linguagem de programação moderna, orientada a objetos e fortemente tipada. A linguagem permite a criação de unúmeros tipos de aplicações robustas e seguras que serão executadas no ambiente .Net. Sendo fortemente inspirada na família C de linguagens, o C# é imediatamente familiar a desenvolvedores C, C++, Java e JavaScript.
 
-Criada com o intuito de compor o ambiente .Net e ser executada no próprio, este sendo um sistema de execução virtual composto por uma common language runtime (CRL) e um conjuto de bibliotecas de classes. A CRL é a implementação de uma common language infrastructure (CLI) desenvolvida pela Microsoft. A CLI, por sua vez, é a base para a criação, execução e desenvolvimento do ambiente no qual lianguagens e suas bibliotecas trabalham em conjunto.
+Criada com o intuito de compor o ambiente .Net e ser executada no próprio, este sendo um sistema de execução virtual composto por uma common language runtime (CLR) e um conjuto de bibliotecas de classes. A CRL é a implementação de uma common language infrastructure (CLI) desenvolvida pela Microsoft. A CLI, por sua vez, é a base para a criação, execução e desenvolvimento do ambiente no qual linguagens e suas bibliotecas trabalham em conjunto.
 
 <h1>.NET</h1>
 
@@ -36,12 +36,19 @@ O código fonte escrito em C# é compilado em uma [intermediate language](https:
 
 Quando um programa em C# é executado, o assembly é carregado na CLR. Com isso, a CLR performa a conversão da intermediate language através do  Just-in-time compilation process para obter código nativo. A CLR ainda provê outros serviços relacionados com a coleta automática de lixo (ou garbage collection), manipulação de exceções e gerenciamento de recursos. O código que é executado pela CLR é por vezes chamado de "managed code", já o "unmanaged code" é compilado em código nativo correspondente a plataforma especificada.
 
+A imagem a seguir descreve o processo de compilação utilizando o JIT Compiler passo a passo:
+
+<div align="center">
+  <img width="90%" src="https://user-images.githubusercontent.com/61476935/117234352-34d98800-adfb-11eb-9d64-53d3400667b5.png">
+</div>
+
 <h2>Using .NET</h2>
 
 Aplicações e bibliotecas .NET são desenvolvidas a partir de um código fonte ([C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#specifying-types-in-variable-declarations), [F#](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-inference) ou [Visual Basic](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)) e um arquivo de projeto, utilizando a [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/) ou um ambiente de desenvolvimento integrado (IDE), como o [Visual Studio](https://visualstudio.microsoft.com/). 
 
-para que seja possível prosseguir nos meandros da linguagem da qual esta documentação se trata, é preciso ter instalado o ambiente de criação mínimo, sendo neste caso uma IDE.
+Para que seja possível prosseguir nos meandros da linguagem da qual esta documentação se trata, é preciso ter instalado o ambiente de criação mínimo, sendo neste caso uma IDE.
 
+Após a instalação, já é possível dar continuidade ao processo de entendimento do C#:
 
 <h1>Hellow World</h1>
 
