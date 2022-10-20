@@ -32,9 +32,9 @@ Descrevendo de forma simplória, o .NET é uma plataforma de desenvolvimento de 
 
 Mais sobre o .NET e seus recursos pode ser encontrado em [.NET](https://github.com/VictorSantos12/.NET).
 
-<h2>Processo de Compolação</h2>
+<h2>Processo de Compilação</h2>
 
-O código fonte escrito em C# é compilado em uma [intermediate language](https://learn.microsoft.com/en-us/dotnet/standard/managed-code)(IL) que está em conformidade com as especificações da CLI. O código IL e seus recursos, tais como bitmaps e strings, são armazenados em um assembly(conjunto), normalmente sendo um arquivo <i>.dll</i>. Esse arquivo ainda contém um manifesto que descreve informações sobre o tipo de assembly, sua versão e cultura.
+O código fonte escrito em C# é compilado em uma [intermediate language](https://learn.microsoft.com/en-us/dotnet/standard/managed-code)(IL) que está em conformidade com as especificações da CLI. O código IL e seus recursos, tais como bitmaps e strings, são armazenados em um assembly(conjunto), normalmente sendo um arquivo <i>.exe</i> ou <i>.dll</i>. Esse arquivo ainda contém um manifesto que descreve informações sobre o tipo de assembly, sua versão e cultura.
 
 Quando um programa em C# é executado, o assembly é carregado na CLR. Com isso, a CLR performa a conversão da intermediate language através do  Just-in-time compilation process para obter instruções em código nativo. A CLR ainda provê outros serviços relacionados com a coleta automática de lixo (ou garbage collection), manipulação de exceções e gerenciamento de recursos. O código que é executado pela CLR é por vezes chamado de "managed code", já o "unmanaged code" é compilado em código nativo correspondente a plataforma especificada.
 
@@ -44,7 +44,8 @@ A imagem a seguir descreve o processo de compilação utilizando o JIT Compiler 
   <img width="90%" src="https://user-images.githubusercontent.com/61476935/117234352-34d98800-adfb-11eb-9d64-53d3400667b5.png">
 </div>
 
-<h2>Using .NET</h2>
+
+<h2>Usando o .NET</h2>
 
 Aplicações e bibliotecas .NET são desenvolvidas a partir de um código fonte ([C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#specifying-types-in-variable-declarations), [F#](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-inference) ou [Visual Basic](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)) e um arquivo de projeto, utilizando a [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/) ou um ambiente de desenvolvimento integrado (IDE), como o [Visual Studio](https://visualstudio.microsoft.com/). 
 
