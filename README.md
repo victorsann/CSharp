@@ -30,11 +30,13 @@ Descrevendo de forma simplória, o .NET é uma plataforma de desenvolvimento de 
 - [Type system](https://learn.microsoft.com/en-us/dotnet/standard/base-types/common-type-system)
 - [Unsafe code](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/unsafe-code)
 
-<h2>Arquitetura .NET</h2>
+Mais sobre o .NET e seus recursos pode ser encontrado em [.NET](https://github.com/VictorSantos12/.NET).
+
+<h2>Processo de Compolação</h2>
 
 O código fonte escrito em C# é compilado em uma [intermediate language](https://learn.microsoft.com/en-us/dotnet/standard/managed-code)(IL) que está em conformidade com as especificações da CLI. O código IL e seus recursos, tais como bitmaps e strings, são armazenados em um assembly(conjunto), normalmente sendo um arquivo <i>.dll</i>. Esse arquivo ainda contém um manifesto que descreve informações sobre o tipo de assembly, sua versão e cultura.
 
-Quando um programa em C# é executado, o assembly é carregado na CLR. Com isso, a CLR performa a conversão da intermediate language através do  Just-in-time compilation process para obter código nativo. A CLR ainda provê outros serviços relacionados com a coleta automática de lixo (ou garbage collection), manipulação de exceções e gerenciamento de recursos. O código que é executado pela CLR é por vezes chamado de "managed code", já o "unmanaged code" é compilado em código nativo correspondente a plataforma especificada.
+Quando um programa em C# é executado, o assembly é carregado na CLR. Com isso, a CLR performa a conversão da intermediate language através do  Just-in-time compilation process para obter instruções em código nativo. A CLR ainda provê outros serviços relacionados com a coleta automática de lixo (ou garbage collection), manipulação de exceções e gerenciamento de recursos. O código que é executado pela CLR é por vezes chamado de "managed code", já o "unmanaged code" é compilado em código nativo correspondente a plataforma especificada.
 
 A imagem a seguir descreve o processo de compilação utilizando o JIT Compiler passo a passo:
 
